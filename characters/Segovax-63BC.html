@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="/london/">
+    <title>Segovax - London Characters</title>
+    <link rel="stylesheet" href="css/london.css">
+    <link rel="stylesheet" href="css/character.css">
+</head>
+<body class="character-page" data-family="dogget">
+    
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="families/Barnikel.html">Barnikel</a></li>
+        <li><a href="families/Bull.html">Bull</a></li>
+        <li><a href="families/Carpenter.html">Carpenter</a></li>
+        <li><a href="families/Dogget.html" class="current">Dogget</a></li>
+        <li><a href="families/Ducket.html">Ducket</a></li>
+        <li><a href="families/Fleming.html">Fleming</a></li>
+        <li><a href="families/Meredith.html">Meredith</a></li>
+        <li><a href="families/Penny.html">Penny</a></li>
+        <li><a href="families/Silversleeves.html">Silversleeves</a></li>
+    </ul>
+    <select onchange="if(this.value) window.location.href=this.value">
+        <option value="">Choose a family...</option>
+        <option value="index.html">Home</option>
+        <option value="families/Barnikel.html">Barnikel</option>
+        <option value="families/Bull.html">Bull</option>
+        <option value="families/Carpenter.html">Carpenter</option>
+        <option value="families/Dogget.html" selected>Dogget</option>
+        <option value="families/Ducket.html">Ducket</option>
+        <option value="families/Fleming.html">Fleming</option>
+        <option value="families/Meredith.html">Meredith</option>
+        <option value="families/Penny.html">Penny</option>
+        <option value="families/Silversleeves.html">Silversleeves</option>
+    </select>
+</nav>
+
+
+    <div class="character-container">
+        <div class="character-header">
+            <h1>Segovax</h1>
+            <div class="birth-year">c. 63BC</div>
+        </div>
+
+        <img src="images/characters/Segovax-63BC.png" alt="Segovax" class="character-portrait-large">
+
+        <div class="character-body">
+<div class="toc-container">
+  <div class="toc-header">
+    <span class="toc-title">Contents</span>
+    <button class="toc-toggle" onclick="toggleTOC()"><<</button>
+  </div>
+  <div class="toc-content">
+        <div class='toc-section'><a href='characters/Segovax-63BC.html#overview'>Overview</a></div>
+        <div class='toc-section'><a href='characters/Segovax-63BC.html#physical-description'>Physical Description</a></div>
+        <div class='toc-section'><a href='characters/Segovax-63BC.html#character-and-personality'>Character and Personality</a></div>
+        <div class='toc-section'><a href='characters/Segovax-63BC.html#life-and-events'>Life and Events</a></div>
+        <div class='toc-subsection'><a href='characters/Segovax-63BC.html#early-childhood-c-63-58-bc'>Early Childhood (c. 63-58 BC)</a></div>
+        <div class='toc-subsection'><a href='characters/Segovax-63BC.html#spring-54-bc-the-druids-offering'>Spring 54 BC: The Druid's Offering</a></div>
+        <div class='toc-subsection'><a href='characters/Segovax-63BC.html#early-summer-54-bc-the-wolf'>Early Summer 54 BC: The Wolf</a></div>
+        <div class='toc-subsection'><a href='characters/Segovax-63BC.html#midsummer-54-bc-the-journey-to-the-sea'>Midsummer 54 BC: The Journey to the Sea</a></div>
+        <div class='toc-subsection'><a href='characters/Segovax-63BC.html#late-summer-54-bc-the-secret-plan'>Late Summer 54 BC: The Secret Plan</a></div>
+        <div class='toc-subsection'><a href='characters/Segovax-63BC.html#dawn-battle-of-the-thames-crossing-54-bc'>Dawn, Battle of the Thames Crossing (54 BC)</a></div>
+        <div class='toc-subsection'><a href='characters/Segovax-63BC.html#autumn-54-bc-grief-and-healing'>Autumn 54 BC: Grief and Healing</a></div>
+        <div class='toc-section'><a href='characters/Segovax-63BC.html#relationships'>Relationships</a></div>
+        <div class='toc-subsection'><a href='characters/Segovax-63BC.html#the-fisher-father'>The Fisher (Father)</a></div>
+        <div class='toc-subsection'><a href='characters/Segovax-63BC.html#cartimandua-mother'>Cartimandua (Mother)</a></div>
+        <div class='toc-subsection'><a href='characters/Segovax-63BC.html#branwen-sister'>Branwen (Sister)</a></div>
+        <div class='toc-subsection'><a href='characters/Segovax-63BC.html#the-old-druid'>The Old Druid</a></div>
+        <div class='toc-subsection'><a href='characters/Segovax-63BC.html#julius-caesar'>Julius Caesar</a></div>
+        <div class='toc-section'><a href='characters/Segovax-63BC.html#historical-context'>Historical Context</a></div>
+        <div class='toc-section'><a href='characters/Segovax-63BC.html#themes-and-significance'>Themes and Significance</a></div>
+        <div class='toc-section'><a href='characters/Segovax-63BC.html#key-quotes-about-segovax'>Key Quotes About Segovax</a></div>
+        <div class='toc-section'><a href='characters/Segovax-63BC.html#key-quotes-said-by-segovax'>Key Quotes Said by Segovax</a></div>
+  </div>
+</div>
+<script>
+  function toggleTOC() {
+    const container = document.querySelector('.toc-container');
+    const content = document.querySelector('.toc-content');
+    const title = document.querySelector('.toc-title');
+    const toggle = document.querySelector('.toc-toggle');
+
+    if (container.classList.contains('collapsed')) {
+      container.classList.remove('collapsed');
+      content.style.display = 'block';
+      title.style.display = 'inline';
+      toggle.textContent = '<<';
+    } else {
+      container.classList.add('collapsed');
+      content.style.display = 'none';
+      title.style.display = 'none';
+      toggle.textContent = '☰';
+    }
+  }
+</script>
+
+
+<div class='basic-info-box'>
+<div class='info-row'>
+<div class='info-label'>Born</div>
+<div class='info-content'>
+c. 63 BC</div>
+</div>
+<div class='info-row'>
+<div class='info-label'>Died</div>
+<div class='info-content'>
+Unknown</div>
+</div>
+<div class='info-row'>
+<div class='info-label'>Occupation</div>
+<div class='info-content'>
+Fisherman's son (in training); aspiring warrior</div>
+</div>
+<div class='info-row'>
+<div class='info-label'>Social Status</div>
+<div class='info-content'>
+Humble peasant fishing family</div>
+</div>
+<div class='info-row'>
+<div class='info-label'>Father</div>
+<div class='info-content'>
+<a href="characters/The-Fisher-80BC.html">The Fisher</a></div>
+</div>
+<div class='info-row'>
+<div class='info-label'>Mother</div>
+<div class='info-content'>
+<a href="characters/Cartimandua-80BC.html">Cartimandua</a></div>
+</div>
+<div class='info-row'>
+<div class='info-label'>Sister</div>
+<div class='info-content'>
+<a href="characters/Branwen-60BC.html">Branwen</a></div>
+</div>
+<div class='info-row'>
+<div class='info-label'>Brother</div>
+<div class='info-content'>
+Unnamed infant</div>
+</div>
+<div class='info-row'>
+<div class='info-label'>Chapters</div>
+<div class='info-content'>
+The River</div>
+</div>
+</div>
+<h2 id='overview'>Overview</h2>
+
+<p>Segovax is a nine-year-old boy living along the Thames River during Julius Caesar's second invasion of Britain in 54 BC. The son of a humble fisherman known simply as "The Fisher," Segovax is marked by distinctive hereditary traits—a white forelock and webbed hands—that tie him to the river that defines his family's existence. The chapter follows his journey from boyhood innocence through a devastating confrontation with war, grief, and his own perceived cowardice, culminating in a spiritual transformation where he learns to accept the river itself as his father.</p>
+
+<h2 id='physical-description'>Physical Description</h2>
+
+<p>At nine years old, Segovax is small and wiry with a delicate build, described as "like a tadpole or some other little creature of the waters." He possesses his father's most distinctive features: large blue eyes characteristic of Celtic people, dark hair, and two unusual hereditary markers. The first is a white forelock—a patch of white hair on his forehead "as though someone had dabbed it with a brush of white dye"—found in several families along the river region. The second is webbed hands: between his fingers, as far as the first joint, runs a thin layer of skin like the webbing on a duck's foot, a vestigial trait inherited from an ancient gene. Unlike his father and grandfather, whose webbed hands were surgically corrected in infancy, Segovax retained this aquatic feature. His overall appearance gave him a fish-like quality, with his large eyes, wiry frame, and webbed fingers marking him as a true child of the river.</p>
+
+<h2 id='character-and-personality'>Character and Personality</h2>
+
+<p>Segovax embodies the contradictions of a child caught between innocence and the brutal realities of war. He is fundamentally brave, loving, and devoted to his family, particularly his father. A bright and observant boy, he demonstrates exceptional skill for his age, particularly in spear-throwing, achieving accuracy "that few adults could equal" through dedicated practice. He is respectful and obedient, understanding even at nine that "he must also protect" his physically weaker father from hardship.</p>
+
+<p>However, Segovax is also impulsive and prone to grand gestures without fully understanding their consequences. His secret plan to paddle downriver alone in darkness to fight alongside his father reveals both his fierce devotion and his childish inability to grasp the reality of warfare. When confronted with actual battle, he discovers his own limitations—paralyzed by terror, he stands frozen for two hours, unable to join the fight, tormented by the belief that he is a coward. This self-judgment haunts him for months afterward.</p>
+
+<p>His relationship with his sister Branwen shows typical sibling dynamics: he teases her and refuses to share his spear, yet when she faces mortal danger from a wolf, he acts without hesitation to save her life. Segovax is emotionally sensitive and capable of deep grief, spending months in melancholy after his father's death, unable to find comfort even when his mother moves on with another man. His healing ultimately comes through the wisdom of the old druid, who helps him understand that his grief can end, and that the river itself can become his father—a spiritual transformation that allows him to accept loss while maintaining connection to his heritage and identity.</p>
+
+<h2 id='life-and-events'>Life and Events</h2>
+
+<h3 id='early-childhood-c-63-58-bc'>Early Childhood (c. 63-58 BC)</h3>
+
+<p>Segovax grew up in a hamlet of peasant fishers along the Thames, learning the skills of his father's trade from an early age. By age five, he knew how to set snares in the nearby woods. By seven, he could thatch a hut with reeds from the marshes and spear fish expertly. For the past two years, his father had been training him in warrior skills, particularly spear-throwing, which Segovax practiced daily with exceptional dedication and growing skill.</p>
+
+<h3 id='spring-54-bc-the-druids-offering'>Spring 54 BC: The Druid's Offering</h3>
+
+<p>As rumors of Julius Caesar's planned second invasion of Britain spread through the Celtic tribes, Segovax witnessed a sacred ceremony at Londinos where druids offered a bronze shield to the river Thames as protection against the Romans. Standing with his family during the ritual, Segovax felt the eyes of the old druid rest upon him—a moment whose significance he did not yet understand but that would later prove prophetic.</p>
+
+<h3 id='early-summer-54-bc-the-wolf'>Early Summer 54 BC: The Wolf</h3>
+
+<p>After quarreling with his younger sister Branwen over his spear, Segovax refused to let her practice throwing. Branwen, known for her fierce temper, ran off in anger into the woods. When she failed to return, their mother Cartimandua reacted with extreme fear and what seemed like hatred—emotions Segovax found confusing. Searching for his sister, Segovax discovered a starving wolf threatening her life. Acting on pure instinct and all his training, he threw his spear with incredible speed and accuracy, striking a vital organ and killing the wolf. His father praised his bravery and skill, and Segovax wore one of the wolf's pads around his neck as a charm afterward.</p>
+
+<h3 id='midsummer-54-bc-the-journey-to-the-sea'>Midsummer 54 BC: The Journey to the Sea</h3>
+
+<p>His father finally fulfilled a long-promised adventure: a journey downriver to see the open sea. They traveled in a wicker boat with a leather sail, and Segovax saw the estuary for the first time. His father taught him about the geography of the region—the chalk ridges, Kent across the estuary, and the distant Roman province of Gaul. He shared stories about ancient ice ages when the land was frozen and covered in ice. Though Segovax became seasick on the open water, he vowed to venture further out to sea one day. His father gazed at him affectionately during this journey and silently prayed to the gods that after he was gone, the boy would live and beget children—a prayer that foreshadowed the tragedy to come.</p>
+
+<p>On the return journey, they witnessed the great chief Cassivelaunus with Celtic chariots being transported across the river. Segovax's father swore an oath to fight alongside Cassivelaunus against the Romans, and the chief gave him a bronze brooch as recognition of this pledge. Later, the Fisher gave this brooch to his son.</p>
+
+<h3 id='late-summer-54-bc-the-secret-plan'>Late Summer 54 BC: The Secret Plan</h3>
+
+<p>When word came that Caesar was actually crossing the channel with his legions, the Fisher sent his family upriver to safety while he remained behind to honor his oath to Cassivelaunus. During this evacuation, Segovax formed what he called his "daring plan"—to escape his family and paddle back downriver alone in the darkness to fight beside his father. He knew this plan would probably cost him his life, but the thought of fighting side by side with his father, "perhaps dying together," seemed "all in the world he desired."</p>
+
+<p>Taking a small coracle, Segovax slipped away at night and paddled alone through the darkness for several hours, fighting exhaustion and sleep by "thinking always, hour after long hour, of his father." His sister Branwen discovered him leaving and begged to come along, but he convinced her to stay behind, telling her only "To Father... To fight."</p>
+
+<h3 id='dawn-battle-of-the-thames-crossing-54-bc'>Dawn, Battle of the Thames Crossing (54 BC)</h3>
+
+<p>Segovax beached his coracle on the muddy northern bank near the ford where the battle would take place. He became the only observer to witness the Romans actually crossing the Thames. Searching desperately among thousands of Celtic warriors for his father, he could not find him in the chaos. When the Roman cavalry appeared and the battle began, the nine-year-old boy was overcome with terror—a paralysis so complete that he stood frozen for two hours at the riverbank, unable to move or join the fight. In his mind, he condemned himself: "I must be a coward." He desperately hoped his father would not see him in this shameful state.</p>
+
+<p>The battle ended in brutal defeat for the Celts by mid-afternoon. The Fisher fell early in the fighting, sword in hand, exactly as the druid's premonition had foretold. After the Romans established their camp, Segovax ventured onto the battlefield and found his father lying on his back, "sweet, thin face gazing up at the sky," with "a frightful gash in his side" from a Roman sword. Kneeling beside the body, Segovax was "racked with sobs."</p>
+
+<p>Roman soldiers searching the battlefield for weapons approached him. Despite the pain in his wrist, Segovax picked up his father's sword to defend himself and the body. It was then that Julius Caesar himself appeared and, seeing the brave boy's defiance, laughed and said: "Here's a brave young Celt. He still won't give up. Better leave him alone, centurion, or he might kill us all!" The Romans left him alone. Segovax retrieved his father's bronze brooch and the broken sword before leaving.</p>
+
+<h3 id='autumn-54-bc-grief-and-healing'>Autumn 54 BC: Grief and Healing</h3>
+
+<p>For months after his father's death, Segovax suffered from grief "that would not depart." He was surprised when his mother took up with another man after only three months. Though the new man was kind to the children, he could not ease Segovax's sorrow. The boy took to sitting alone by the river, "gazing across the river at the hills of Londinos," watching the water's "slow, tidal breathing," and making pilgrimages to the battlefield during the day.</p>
+
+<p>During Samhain season, a Roman merchant vessel sailed up the river out of curiosity about the battle site. Segovax studied the ship with fascination and received a silver coin from the crew—though he didn't fully understand its purpose. The ship's departure sparked dreams of future adventures on the open sea, even perhaps on a Roman ship.</p>
+
+<p>Shortly afterward, the old druid approached Segovax as he sat melancholy by the river. They talked for a long time, and Segovax confessed everything: the terrible day of battle, what he saw, and "even of his cowardice." The druid gently reassured him: "Battles are not for children. I do not think you are a coward, Segovax." He reminded the boy that his father had told him to protect his mother and sister, not to fight in battle.</p>
+
+<p>When Segovax burst out with his deepest grief—"But I've lost him. I've lost my father. He'll never come back to me again"—the druid performed an ancient Celtic ritual. He broke the Fisher's sword upon a stone and threw the broken pieces into the Thames, telling Segovax: "End your grief. The river is your father now." In that moment, Segovax understood and accepted this profound wisdom, finding a way to transform his loss into spiritual connection with the river that had always defined his family's existence.</p>
+
+<h2 id='relationships'>Relationships</h2>
+
+<h3 id='the-fisher-father'>The Fisher (Father)</h3>
+
+<p>Segovax's relationship with his father forms the emotional core of his story. He deeply loved and admired the Fisher, a humble but skilled fisherman known for quiet determination and kindness. The Fisher was physically unusual—curved back, thin face, large arms, and the same white forelock and webbed hands (though surgically corrected) that Segovax inherited. Despite his physical weakness compared to other men, the Fisher never gave up, and Segovax embodied this same determination.</p>
+
+<p>The father-son bond was characterized by patient teaching: the Fisher trained Segovax in fishing, hunting, survival skills, and warrior arts. Their midsummer journey to the sea together represented a perfect moment of connection, with the father teaching geography, history, and mythology while silently praying for his son's future. The Fisher gave Segovax the bronze brooch from Cassivelaunus as a symbol of honor and duty.</p>
+
+<p>Segovax's desperate attempt to fight alongside his father at the Thames crossing reveals the depth of his devotion—he was willing to die rather than be separated from his father in battle. After the Fisher's death, Segovax's grief was so profound that months passed without relief, and only the druid's wisdom—that "the river is your father now"—allowed him to transform his loss into spiritual connection.</p>
+
+<h3 id='cartimandua-mother'>Cartimandua (Mother)</h3>
+
+<p>Segovax's relationship with his mother is more complex and less fully explored. Cartimandua is described as striking in appearance with "thick, raven-dark hair" and "heavy breasts," but mercurial and moody, subject to emotional extremes. Segovax did not understand the secret bargain she had made—promising her daughter Branwen to a nobleman in exchange for her husband's safety—which explained her extreme fear and seeming hatred when Branwen disappeared during the wolf incident.</p>
+
+<p>After the Fisher's death, Segovax was surprised when his mother took up with another man after only three months. Though the new man was kind, Segovax could not be comforted and withdrew into solitary grief by the river. This suggests some emotional distance between mother and son, or perhaps his inability to accept his mother's way of coping with loss. Cartimandua watched her children with "anxiety and fierce protectiveness," but Segovax ultimately found his healing not through her but through the druid's wisdom.</p>
+
+<h3 id='branwen-sister'>Branwen (Sister)</h3>
+
+<p>Segovax's relationship with his younger sister Branwen shows typical sibling dynamics mixed with genuine affection and protective instinct. Fair-haired, quick-witted, athletic, and known for an uncontrollable temper, Branwen admired Segovax greatly and wanted to follow him everywhere. He sometimes treated her harshly, refusing to let her practice with his spear and teasing her.</p>
+
+<p>When their quarrel sent her running into the woods where a wolf threatened her life, Segovax acted without hesitation to save her, killing the wolf with exceptional spear-throwing skill. This incident revealed that beneath the typical sibling friction lay deep protective love. When Segovax attempted to paddle downriver to the battle, Branwen discovered him leaving and begged to come along, showing her fierce loyalty to her brother. He convinced her to stay behind, partly to protect her from danger.</p>
+
+<h3 id='the-old-druid'>The Old Druid</h3>
+
+<p>Though not related by blood, the old druid serves as a spiritual father figure to Segovax. The druid had second sight and foresaw tragedy for Segovax's family. After the battle, when Segovax was consumed by grief and self-condemnation, the druid sought him out with gentleness and wisdom. He listened without judgment as Segovax confessed what he saw as his cowardice, then offered compassionate reassurance: "Battles are not for children. I do not think you are a coward, Segovax."</p>
+
+<p>The druid performed the crucial ritual of breaking the Fisher's sword and throwing it into the river, teaching Segovax that "the river is your father now." This spiritual wisdom allowed Segovax to end his grief while maintaining connection to his heritage and identity. The druid's intervention represents the healing power of Celtic spiritual tradition and the importance of elder wisdom in helping the young navigate trauma and loss.</p>
+
+<h3 id='julius-caesar'>Julius Caesar</h3>
+
+<p>Segovax's brief encounter with Julius Caesar creates one of the most memorable moments in the chapter. Kneeling beside his father's body, gripping the broken sword despite his pain, Segovax represented defiant courage in the face of overwhelming power. Caesar recognized this quality, laughing at the boy's bravery and ordering his soldiers to leave him alone: "Here's a brave young Celt. He still won't give up. Better leave him alone, centurion, or he might kill us all!"</p>
+
+<p>This moment is deeply ironic: Caesar saw the courage that Segovax himself could not see. While Segovax condemned himself as a coward for freezing in terror during the battle, Caesar saw only a brave child defending his father's body. This encounter plants the seed for Segovax's later fascination with Roman ships and dreams of adventure, suggesting that despite the tragedy, the Roman presence in Britain would ultimately become part of Segovax's world and future.</p>
+
+<h2 id='historical-context'>Historical Context</h2>
+
+<p>Segovax's story takes place during one of the most significant moments in British history: Julius Caesar's second invasion of Britain in 54 BC. Unlike the first invasion in 55 BC, which was more of a reconnaissance, the 54 BC expedition brought substantial Roman forces—five legions and two thousand cavalry—across the English Channel. Caesar faced fierce resistance from British tribes united under the war leader Cassivelaunus, and the decisive battle occurred at a Thames River crossing, likely near the area that would become London.</p>
+
+<p>The Celtic society Segovax inhabited was sophisticated but non-urban, organized around tribal loyalties, warrior culture, and druidic religious traditions. Families like Segovax's lived in small hamlets, subsisting through fishing, hunting, and agriculture. Social status was clearly defined, with humble fishermen like the Fisher occupying the lower tiers, while nobles and chiefs like Cassivelaunus held power. Yet there was still respect across social boundaries—Cassivelaunus gave the Fisher a bronze brooch in recognition of his oath, acknowledging the fisherman's honor and courage.</p>
+
+<p>The druids held immense spiritual and social authority, serving as priests, judges, teachers, and seers. The old druid's second sight and his role in healing Segovax's trauma demonstrate the centrality of druidic wisdom in Celtic culture. The ritual of breaking the sword and offering it to the river reflects Celtic religious practices of votive offerings to water deities and the belief that rivers were sacred, living entities with spiritual power.</p>
+
+<p>The battle at the Thames ended in defeat for the Celts, though Caesar's invasion did not result in permanent Roman occupation. That would not come until the Claudian conquest nearly a century later. However, this encounter marked Britain's first direct contact with Roman military power and foreshadowed the eventual integration of Britain into the Roman Empire. Segovax's fascination with the Roman merchant ship and his receipt of a silver coin hint at the economic and cultural changes that would follow.</p>
+
+<p>For a nine-year-old boy in 54 BC, war would have been a normal part of life. Celtic culture valued martial prowess, and boys like Segovax were trained from childhood in weapons and warfare. Yet the reality of Roman military might—disciplined legions, cavalry formations, superior tactics—was something new and overwhelming. Segovax's terror at the sight of Roman cavalry was not cowardice but a child's natural response to unprecedented violence and power.</p>
+
+<h2 id='themes-and-significance'>Themes and Significance</h2>
+
+<p>Segovax embodies several of the novel's central themes. First and foremost, he represents <strong>continuity with the land and water</strong>—specifically, the Thames River that defines London's existence. His hereditary markers (the white forelock and webbed hands) physically link him to the river and to generations of river people. The druid's teaching that "the river is your father now" transforms personal loss into spiritual connection with place, suggesting that London's identity is fundamentally tied to the Thames and that individuals derive meaning from this geographic relationship.</p>
+
+<p>The theme of <strong>the collision between Celtic and Roman worlds</strong> runs through Segovax's story. His first encounter with Roman power is devastating—his father's death, his own paralyzing terror, and the brutal defeat of Celtic forces. Yet he also experiences Roman mercy (Caesar's decision to leave him alone) and Roman curiosity (the merchant ship). His fascination with the ship and dreams of future adventure suggest that despite conquest and loss, the Roman presence will ultimately become integrated into British identity rather than simply destroying it.</p>
+
+<p>Segovax's story explores <strong>the nature of courage and cowardice</strong>. He condemns himself as a coward for freezing in terror during battle, yet he shows immense courage in killing the wolf to save his sister, in paddling alone through darkness to reach the battle, and in defending his father's body against Roman soldiers. Julius Caesar recognizes his bravery even when Segovax cannot. The druid's wisdom—"Battles are not for children"—reframes the question entirely, suggesting that true courage means protecting what you love and living honorably within your actual capacities, not conforming to impossible warrior ideals.</p>
+
+<p>The theme of <strong>grief, loss, and healing</strong> is central to Segovax's arc. His months of melancholy after his father's death represent profound trauma that cannot be resolved through ordinary means. His mother's quick move to another relationship offers no comfort. Only the druid's spiritual wisdom—breaking the sword, casting it into the river, and teaching that the river itself can become father—provides a path through grief. This suggests that healing comes not from forgetting or moving on, but from transforming loss into spiritual connection with something larger and eternal.</p>
+
+<p>Finally, Segovax represents <strong>the perspective of the powerless in history's great events</strong>. He is not a chief or warrior or druid with agency and power. He is a nine-year-old fisherman's son who witnesses history but cannot control it. His story shows how ordinary people—especially children—experience war, loss, and change. His survival and eventual healing suggest resilience and the continuation of life even in the wake of defeat and tragedy.</p>
+
+<h2 id='key-quotes-about-segovax'>Key Quotes About Segovax</h2>
+
+<blockquote class='character-quote'>
+<div class='quote-text'>"Here's a brave young Celt. He still won't give up. Better leave him alone, centurion, or he might kill us all!"</div>
+<div class='quote-attribution'>Julius Caesar, seeing Segovax defending his father's body with a broken sword</div>
+</blockquote>
+
+<blockquote class='character-quote'>
+<div class='quote-text'>"Battles are not for children. I do not think you are a coward, Segovax."</div>
+<div class='quote-attribution'>The old druid, offering reassurance after Segovax confessed his terror during the battle</div>
+</blockquote>
+
+<blockquote class='character-quote'>
+<div class='quote-text'>"End your grief. The river is your father now."</div>
+<div class='quote-attribution'>The old druid, after breaking the Fisher's sword and throwing it into the Thames</div>
+</blockquote>
+
+<h2 id='key-quotes-said-by-segovax'>Key Quotes Said by Segovax</h2>
+
+<blockquote class='character-quote'>
+<div class='quote-text'>"They would fight together, side by side. Perhaps they would die together. It seemed to him that this was all in the world he desired."</div>
+<div class='quote-attribution'>Segovax's thoughts as he paddled downriver alone in darkness to reach his father</div>
+</blockquote>
+
+<blockquote class='character-quote'>
+<div class='quote-text'>"I must be a coward."</div>
+<div class='quote-attribution'>Segovax's judgment of himself after standing frozen with terror for two hours during the battle</div>
+</blockquote>
+
+<blockquote class='character-quote'>
+<div class='quote-text'>"But I've lost him. I've lost my father. He'll never come back to me again."</div>
+<div class='quote-attribution'>Segovax's expression of grief to the old druid, before his spiritual transformation</div>
+</blockquote>
+
+        </div>
+    </div>
+</body>
+</html>

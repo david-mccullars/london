@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="/london/">
+    <title>Bull Family Tree</title>
+    <link rel="stylesheet" href="css/london.css">
+    <link rel="stylesheet" href="css/family-tree.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.33.1/cytoscape.min.js"></script>
+</head>
+<body class="family-tree-page" data-family="bull">
+    
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="families/Barnikel.html">Barnikel</a></li>
+        <li><a href="families/Bull.html" class="current">Bull</a></li>
+        <li><a href="families/Carpenter.html">Carpenter</a></li>
+        <li><a href="families/Dogget.html">Dogget</a></li>
+        <li><a href="families/Ducket.html">Ducket</a></li>
+        <li><a href="families/Fleming.html">Fleming</a></li>
+        <li><a href="families/Meredith.html">Meredith</a></li>
+        <li><a href="families/Penny.html">Penny</a></li>
+        <li><a href="families/Silversleeves.html">Silversleeves</a></li>
+    </ul>
+    <select onchange="if(this.value) window.location.href=this.value">
+        <option value="">Choose a family...</option>
+        <option value="index.html">Home</option>
+        <option value="families/Barnikel.html">Barnikel</option>
+        <option value="families/Bull.html" selected>Bull</option>
+        <option value="families/Carpenter.html">Carpenter</option>
+        <option value="families/Dogget.html">Dogget</option>
+        <option value="families/Ducket.html">Ducket</option>
+        <option value="families/Fleming.html">Fleming</option>
+        <option value="families/Meredith.html">Meredith</option>
+        <option value="families/Penny.html">Penny</option>
+        <option value="families/Silversleeves.html">Silversleeves</option>
+    </select>
+</nav>
+
+
+    <div class="container">
+        <header>
+            <h1>The Bull Family Line</h1>
+            <p class="subtitle">Saxon Traders and City Merchants</p>
+        </header>
+
+        <div id="cy"></div>
+    </div>
+
+    <script>
+        // Embed the family tree data
+        const familyData = {"nodes":[{"id":"Cerdic-555","name":"Cerdic","year":"555","chapter":"rood","role":null,"portrait":"images/characters/sm/Cerdic-555.png","page":"characters/Cerdic-555.html"},{"id":"Elfgiva-Godiva-567","name":"Elfgiva Godiva","year":"567","chapter":"rood","role":null,"portrait":"images/characters/sm/Elfgiva-Godiva-567.png","page":"characters/Elfgiva-Godiva-567.html"},{"id":"Wistan-588","name":"Wistan","year":"588","chapter":"rood","role":null,"portrait":"images/characters/sm/Wistan-588.png","page":"characters/Wistan-588.html"},{"id":"Leofric-1026","name":"Leofric","year":"1026","chapter":"conqueror","role":null,"portrait":"images/characters/sm/Leofric-1026.png","page":"characters/Leofric-1026.html"},{"id":"Sampson-Bull-1140","name":"Sampson Bull","year":"1140","chapter":"saint","role":null,"portrait":"images/characters/sm/Sampson-Bull-1140.png","page":"characters/Sampson-Bull-1140.html"},{"id":"Ida-Bull-1156","name":"Ida Bull","year":"1156","chapter":"saint","role":null,"portrait":"images/characters/sm/Ida-Bull-1156.png","page":"characters/Ida-Bull-1156.html"},{"id":"Brother-Michael-Bull-1143","name":"Brother Michael Bull","year":"1143","chapter":"saint","role":"Brother of Sampson","portrait":"images/characters/sm/Brother-Michael-Bull-1143.png","page":"characters/Brother-Michael-Bull-1143.html"},{"id":"David-Bull-1176","name":"David Bull","year":"1176","chapter":"mayor","role":"Son of Sampson and Ida","portrait":"images/characters/sm/David-Bull-1176.png","page":"characters/David-Bull-1176.html"},{"id":"William-Bull-1255","name":"William Bull","year":"1255","chapter":"whorehouse","role":"Patrician merchant","portrait":"images/characters/sm/William-Bull-1255.png","page":"characters/William-Bull-1255.html"},{"id":"Elias-Bull-1265","name":"Elias Bull","year":"1265","chapter":"whorehouse","role":"Cousin of William","portrait":"images/characters/sm/Elias-Bull-1265.png","page":"characters/Elias-Bull-1265.html"},{"id":"Gilbert-Bull-1330","name":"Gilbert Bull","year":"1330","chapter":"bridge","role":"Wealthy Mercer","portrait":"images/characters/sm/Gilbert-Bull-1330.png","page":"characters/Gilbert-Bull-1330.html"},{"id":"Tiffany-Bull-1365","name":"Tiffany Bull","year":"1365","chapter":"bridge","role":"Daughter of Gilbert","portrait":"images/characters/sm/Tiffany-Bull-1365.png","page":"characters/Tiffany-Bull-1365.html"},{"id":"Geoffrey-Ducket-1361","name":"Geoffrey Ducket","year":"1361","chapter":"bridge","role":"Took name Bull","portrait":"images/characters/sm/Geoffrey-Ducket-1361.png","page":"characters/Geoffrey-Ducket-1361.html"},{"id":"James-Bull-1358","name":"James Bull","year":"1358","chapter":"bridge","role":"Descendant of Elias Bull","portrait":"images/characters/sm/James-Bull-1358.png","page":"characters/James-Bull-1358.html"},{"id":"Dame-Barnikel-1346","name":"Dame Barnikel","year":"1346","chapter":"bridge","role":"m. into Bull family","portrait":"images/characters/sm/Dame-Barnikel-1346.png","page":"characters/Dame-Barnikel-1346.html"},{"id":"Rowland-Bull-1503","name":"Rowland Bull","year":"1503","chapter":"hampton","role":null,"portrait":"images/characters/sm/Rowland-Bull-1503.png","page":"characters/Rowland-Bull-1503.html"},{"id":"Susan-Meredith-1505","name":"Susan Meredith","year":"1505","chapter":"hampton","role":null,"portrait":"images/characters/sm/Susan-Meredith-1505.png","page":"characters/Susan-Meredith-1505.html"},{"id":"William-Bull-1557","name":"William Bull","year":"1557","chapter":"globe","role":"Descendant of James Bull","portrait":"images/characters/sm/William-Bull-1557.png","page":"characters/William-Bull-1557.html"},{"id":"Edward-Bull-1828","name":"Edward Bull","year":"1828","chapter":"crystal","role":null,"portrait":"images/characters/sm/Edward-Bull-1828.png","page":"characters/Edward-Bull-1828.html"},{"id":"Mary-Anne-Dogget-1827","name":"Mary Anne Dogget","year":"1827","chapter":"crystal","role":null,"portrait":"images/characters/sm/Mary-Anne-Dogget-1827.png","page":"characters/Mary-Anne-Dogget-1827.html"},{"id":"Violet-Bull-1889","name":"Violet Bull","year":"1889","chapter":"crystal","role":null,"portrait":"images/characters/sm/Violet-Bull-1889.png","page":"characters/Violet-Bull-1889.html"},{"id":"Colonel-Meredith-1830","name":"Colonel Meredith","year":"1830","chapter":"crystal","role":null,"portrait":"images/characters/sm/Colonel-Meredith-1830.png","page":"characters/Colonel-Meredith-1830.html"},{"id":"Sarah-Bull-1971","name":"Sarah Bull","year":"1971","chapter":"river","role":null,"portrait":"images/characters/sm/Sarah-Bull-1971.png","page":"characters/Sarah-Bull-1971.html"}],"links":[{"source":"Cerdic-555","target":"Elfgiva-Godiva-567","type":"marriage"},{"source":"Sampson-Bull-1140","target":"Ida-Bull-1156","type":"marriage"},{"source":"Tiffany-Bull-1365","target":"Geoffrey-Ducket-1361","type":"marriage"},{"source":"James-Bull-1358","target":"Dame-Barnikel-1346","type":"marriage"},{"source":"Rowland-Bull-1503","target":"Susan-Meredith-1505","type":"marriage"},{"source":"Edward-Bull-1828","target":"Mary-Anne-Dogget-1827","type":"marriage"},{"source":"Violet-Bull-1889","target":"Colonel-Meredith-1830","type":"marriage"},{"source":"Sampson-Bull-1140","target":"Brother-Michael-Bull-1143","type":"sibling"},{"source":"Cerdic-555","target":"Wistan-588","type":"child"},{"source":"Elfgiva-Godiva-567","target":"Wistan-588","type":"child"},{"source":"Sampson-Bull-1140","target":"David-Bull-1176","type":"child"},{"source":"Ida-Bull-1156","target":"David-Bull-1176","type":"child"},{"source":"Gilbert-Bull-1330","target":"Tiffany-Bull-1365","type":"child"},{"source":"Edward-Bull-1828","target":"Violet-Bull-1889","type":"child"},{"source":"Mary-Anne-Dogget-1827","target":"Violet-Bull-1889","type":"child"},{"source":"Wistan-588","target":"Leofric-1026","type":"descent","label":"~15 generations (466 years)","gap":null},{"source":"Leofric-1026","target":"Sampson-Bull-1140","type":"descent","label":"~4 generations (114 years)","gap":null},{"source":"Sampson-Bull-1140","target":"William-Bull-1255","type":"descent","label":"~4 generations (125 years)","gap":null},{"source":"Ida-Bull-1156","target":"William-Bull-1255","type":"descent","label":"~4 generations (125 years)","gap":null},{"source":"Sampson-Bull-1140","target":"Elias-Bull-1265","type":"descent","label":"~4 generations (125 years)","gap":null},{"source":"Ida-Bull-1156","target":"Elias-Bull-1265","type":"descent","label":"~4 generations (125 years)","gap":null},{"source":"William-Bull-1255","target":"Gilbert-Bull-1330","type":"descent","label":"2 generations (75 years)","gap":null},{"source":"Elias-Bull-1265","target":"James-Bull-1358","type":"descent","label":"~2 generations (93 years)","gap":null},{"source":"James-Bull-1358","target":"Rowland-Bull-1503","type":"descent","label":"~5 generations (145 years)","gap":null},{"source":"Dame-Barnikel-1346","target":"Rowland-Bull-1503","type":"descent","label":"~5 generations (145 years)","gap":null},{"source":"James-Bull-1358","target":"William-Bull-1557","type":"descent","label":"~6 generations (199 years)","gap":null},{"source":"Dame-Barnikel-1346","target":"William-Bull-1557","type":"descent","label":"~6 generations (199 years)","gap":null},{"source":"William-Bull-1557","target":"Edward-Bull-1828","type":"descent","label":"~9 generations (271 years)","gap":null},{"source":"Violet-Bull-1889","target":"Sarah-Bull-1971","type":"descent","label":"~3 generations (82 years)","gap":null}],"chapters":[{"id":"rood","title":"THE ROOD","subtitle":"(600 AD)"},{"id":"conqueror","title":"THE CONQUEROR","subtitle":"(1066)"},{"id":"saint","title":"THE SAINT","subtitle":"(1170)"},{"id":"mayor","title":"THE MAYOR","subtitle":"(1189-1191)"},{"id":"whorehouse","title":"THE WHORE HOUSE","subtitle":"(1290s)"},{"id":"bridge","title":"LONDON BRIDGE","subtitle":"(1382)"},{"id":"hampton","title":"HAMPTON COURT","subtitle":"(1540s)"},{"id":"globe","title":"THE GLOBE","subtitle":"(1597)"},{"id":"crystal","title":"THE CRYSTAL PALACE","subtitle":"(1851)"},{"id":"river","title":"THE RIVER","subtitle":"(1997)"}],"layout":{"couples":[{"person1":"Ida-Bull-1156","person2":"Sampson-Bull-1140","person1_side":"left","person2_side":"right"},{"person1":"Susan-Meredith-1505","person2":"Rowland-Bull-1503","person1_side":"left","person2_side":"right"},{"person1":"Mary-Anne-Dogget-1827","person2":"Edward-Bull-1828","person1_side":"left","person2_side":"right","offset":650,"anchor":"Edward-Bull-1828"},{"person1":"Geoffrey-Ducket-1361","person2":"Tiffany-Bull-1365","person1_side":"left","person2_side":"right","align_with":"Gilbert-Bull-1330"},{"person1":"Cerdic-555","person2":"Elfgiva-Godiva-567","offset":220},{"person1":"Colonel-Meredith-1830","person2":"Violet-Bull-1889","person1_side":"left","person2_side":"right","offset":650,"anchor":"Violet-Bull-1889"}],"singles":{"David-Bull-1176":-100,"William-Bull-1557":650,"Sarah-Bull-1971":650,"Elias-Bull-1265":220,"Wistan-588":220,"Leofric-1026":220}}};
+    </script>
+    <script src="js/family-tree.js"></script>
+</body>
+</html>

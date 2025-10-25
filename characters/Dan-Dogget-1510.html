@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="/london/">
+    <title>Dan Dogget - London Characters</title>
+    <link rel="stylesheet" href="css/london.css">
+    <link rel="stylesheet" href="css/character.css">
+</head>
+<body class="character-page" data-family="dogget">
+    
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="families/Barnikel.html">Barnikel</a></li>
+        <li><a href="families/Bull.html">Bull</a></li>
+        <li><a href="families/Carpenter.html">Carpenter</a></li>
+        <li><a href="families/Dogget.html" class="current">Dogget</a></li>
+        <li><a href="families/Ducket.html">Ducket</a></li>
+        <li><a href="families/Fleming.html">Fleming</a></li>
+        <li><a href="families/Meredith.html">Meredith</a></li>
+        <li><a href="families/Penny.html">Penny</a></li>
+        <li><a href="families/Silversleeves.html">Silversleeves</a></li>
+    </ul>
+    <select onchange="if(this.value) window.location.href=this.value">
+        <option value="">Choose a family...</option>
+        <option value="index.html">Home</option>
+        <option value="families/Barnikel.html">Barnikel</option>
+        <option value="families/Bull.html">Bull</option>
+        <option value="families/Carpenter.html">Carpenter</option>
+        <option value="families/Dogget.html" selected>Dogget</option>
+        <option value="families/Ducket.html">Ducket</option>
+        <option value="families/Fleming.html">Fleming</option>
+        <option value="families/Meredith.html">Meredith</option>
+        <option value="families/Penny.html">Penny</option>
+        <option value="families/Silversleeves.html">Silversleeves</option>
+    </select>
+</nav>
+
+
+    <div class="character-container">
+        <div class="character-header">
+            <h1>Dan Dogget</h1>
+            <div class="birth-year">c. 1510</div>
+        </div>
+
+        <img src="images/characters/Dan-Dogget-1510.png" alt="Dan Dogget" class="character-portrait-large">
+
+        <div class="character-body">
+<div class="toc-container">
+  <div class="toc-header">
+    <span class="toc-title">Contents</span>
+    <button class="toc-toggle" onclick="toggleTOC()"><<</button>
+  </div>
+  <div class="toc-content">
+        <div class='toc-section'><a href='characters/Dan-Dogget-1510.html#overview'>Overview</a></div>
+        <div class='toc-section'><a href='characters/Dan-Dogget-1510.html#physical-description'>Physical Description</a></div>
+        <div class='toc-section'><a href='characters/Dan-Dogget-1510.html#character-and-personality'>Character and Personality</a></div>
+        <div class='toc-section'><a href='characters/Dan-Dogget-1510.html#life-and-events'>Life and Events</a></div>
+        <div class='toc-subsection'><a href='characters/Dan-Dogget-1510.html#1533-early-career'>1533: Early Career</a></div>
+        <div class='toc-subsection'><a href='characters/Dan-Dogget-1510.html#september-1533-royal-appointment'>September 1533: Royal Appointment</a></div>
+        <div class='toc-subsection'><a href='characters/Dan-Dogget-1510.html#may-1535-the-charterhouse-crisis'>May 1535: The Charterhouse Crisis</a></div>
+        <div class='toc-subsection'><a href='characters/Dan-Dogget-1510.html#may-1535-witness-to-power'>May 1535: Witness to Power</a></div>
+        <div class='toc-subsection'><a href='characters/Dan-Dogget-1510.html#the-hampton-court-garden-incident'>The Hampton Court Garden Incident</a></div>
+        <div class='toc-subsection'><a href='characters/Dan-Dogget-1510.html#1535-the-tower-debt'>1535: The Tower Debt</a></div>
+        <div class='toc-subsection'><a href='characters/Dan-Dogget-1510.html#later-life-the-royal-barge'>Later Life: The Royal Barge</a></div>
+        <div class='toc-subsection'><a href='characters/Dan-Dogget-1510.html#c-1599-last-mention'>c. 1599: Last Mention</a></div>
+        <div class='toc-section'><a href='characters/Dan-Dogget-1510.html#relationships'>Relationships</a></div>
+        <div class='toc-subsection'><a href='characters/Dan-Dogget-1510.html#will-dogget'>Will Dogget</a></div>
+        <div class='toc-subsection'><a href='characters/Dan-Dogget-1510.html#thomas-meredith'>Thomas Meredith</a></div>
+        <div class='toc-subsection'><a href='characters/Dan-Dogget-1510.html#margaret-dogget'>Margaret Dogget</a></div>
+        <div class='toc-subsection'><a href='characters/Dan-Dogget-1510.html#matthew-carpenter'>Matthew Carpenter</a></div>
+        <div class='toc-subsection'><a href='characters/Dan-Dogget-1510.html#peter-meredith'>Peter Meredith</a></div>
+        <div class='toc-section'><a href='characters/Dan-Dogget-1510.html#historical-context'>Historical Context</a></div>
+        <div class='toc-section'><a href='characters/Dan-Dogget-1510.html#themes-and-significance'>Themes and Significance</a></div>
+        <div class='toc-section'><a href='characters/Dan-Dogget-1510.html#key-quotes-about-dan-dogget'>Key Quotes About Dan Dogget</a></div>
+        <div class='toc-section'><a href='characters/Dan-Dogget-1510.html#key-quotes-said-by-dan-dogget'>Key Quotes Said by Dan Dogget</a></div>
+  </div>
+</div>
+<script>
+  function toggleTOC() {
+    const container = document.querySelector('.toc-container');
+    const content = document.querySelector('.toc-content');
+    const title = document.querySelector('.toc-title');
+    const toggle = document.querySelector('.toc-toggle');
+
+    if (container.classList.contains('collapsed')) {
+      container.classList.remove('collapsed');
+      content.style.display = 'block';
+      title.style.display = 'inline';
+      toggle.textContent = '<<';
+    } else {
+      container.classList.add('collapsed');
+      content.style.display = 'none';
+      title.style.display = 'none';
+      toggle.textContent = '☰';
+    }
+  }
+</script>
+
+
+<div class='basic-info-box'>
+<div class='info-row'>
+<div class='info-label'>Born</div>
+<div class='info-content'>
+c. 1510</div>
+</div>
+<div class='info-row'>
+<div class='info-label'>Died</div>
+<div class='info-content'>
+c. 1599-1604</div>
+</div>
+<div class='info-row'>
+<div class='info-label'>Occupation</div>
+<div class='info-content'>
+Waterman, King's Waterman</div>
+</div>
+<div class='info-row'>
+<div class='info-label'>Social Status</div>
+<div class='info-content'>
+Working class, elevated to royal service</div>
+</div>
+<div class='info-row'>
+<div class='info-label'>Father</div>
+<div class='info-content'>
+<a href="characters/Will-Dogget-1485.html">Will Dogget</a></div>
+</div>
+<div class='info-row'>
+<div class='info-label'>Sister</div>
+<div class='info-content'>
+Sister Dogget (married to <a href="characters/Fleming-1495.html">Fleming</a>)</div>
+</div>
+<div class='info-row'>
+<div class='info-label'>Spouse</div>
+<div class='info-content'>
+Margaret Dogget</div>
+</div>
+<div class='info-row'>
+<div class='info-label'>Child</div>
+<div class='info-content'>
+Multiple children (names not specified)</div>
+</div>
+<div class='info-row'>
+<div class='info-label'>Chapters</div>
+<div class='info-content'>
+Hampton Court<br>The Globe</div>
+</div>
+</div>
+<h2 id='overview'>Overview</h2>
+
+<p>Daniel Dogget, known as Dan, was a giant of a waterman who became one of the king's watermen during the reign of Henry VIII. Standing over six foot three with enormous physical strength and a distinctive mane of black hair with a white flash, he earned his position through the patronage of the courtier Thomas Meredith. His life was marked by family obligations and his devotion to both his trade and his family, and in his later years he became a link between generations, his grandson <a href="characters/John-Dogget-1570.html">John Dogget</a> continuing the family's connection to the river.</p>
+
+<h2 id='physical-description'>Physical Description</h2>
+
+<p>Dan Dogget was an imposing physical presence. At six foot three, he inherited the legendary Barnikel stature from his distant ancestor. He had a huge mane of black hair with a distinctive flash of white over his forehead - a hereditary trait that would appear in his descendants. He was big-boned and spare in build, with enormous physical strength. He was reputed to be the strongest waterman on the Thames and could "break a chain across his chest." His appearance in the scarlet jacket laced with gold, white hose, gleaming black shoes with silver buckles, and smart peaked cap of black velvet made him a handsome sight in the king's livery.</p>
+
+<h2 id='character-and-personality'>Character and Personality</h2>
+
+<p>Dan was fundamentally a good man burdened by obligations. He was devoted to his wife Margaret and their children, showing deep family loyalty even when it cost him dearly. His sense of duty was profound - he took in his brother-in-law <a href="characters/Matthew-Carpenter-1503.html">Matthew Carpenter</a> and his four children after Carpenter's wife died, and he repeatedly tried to care for his troublesome father despite the old man's drunken escapades.</p>
+
+<p>Despite his legendary toughness - by age twenty no man would fight him even in the roughest waterside taverns - Dan was not a violent or aggressive man. He was fundamentally peaceable and kind. His loud cursing, which surpassed even the notoriously foul-mouthed London watermen, seemed more a product of his trade than his nature.</p>
+
+<p>Dan loved his work on the river deeply. The physical labor suited his strength, and he found genuine contentment in the waterman's life - the feel of oars dipping into water, the surge of the boat, the smell of riverweed. As he fell into his rowing rhythm, he would experience "a huge warmth swelling up in his broad chest as though, like the river's flow, his strength were limitless."</p>
+
+<p>He was capable of gratitude and loyalty to those who helped him, most notably Thomas Meredith. When Meredith secured him the position on the king's barge and found a place for his father at the Charterhouse, Dan's devotion was complete. This loyalty would later be tested when Meredith called in the debt.</p>
+
+<h2 id='life-and-events'>Life and Events</h2>
+
+<h3 id='1533-early-career'>1533: Early Career</h3>
+
+<p>In his early twenties, Dan was already established as the strongest waterman on the Thames. He had been rowing with the men since age twelve and by eighteen could "out-curse any of them." He worked as a ferryman, transporting passengers including gentlemen like <a href="characters/Thomas-Meredith-1507.html">Thomas Meredith</a> between the royal palaces and the city.</p>
+
+<p>However, he was burdened with obligations. His wife Margaret and their children lived in Southwark, but when his brother-in-law Matthew Carpenter's wife died giving birth to her fourth child, Dan brought his family upriver to Hampton Court to live with Carpenter temporarily. More troublesome was his father, <a href="characters/Will-Dogget-1485.html">Will Dogget</a>, an incorrigible drunk who had been living with them for a year, causing Dan endless grief.</p>
+
+<h3 id='september-1533-royal-appointment'>September 1533: Royal Appointment</h3>
+
+<p>Through his connection with Thomas Meredith, who served Secretary Thomas Cromwell, Dan secured a coveted position on the king's barge. The appointment likely paid double what ordinary watermen earned and guaranteed frequent work, as Henry VIII constantly moved between his palaces, especially Greenwich. Meredith also arranged for Will Dogget to be housed at the Charterhouse monastery, where the monks gave him shelter in exchange for garden work. Dan was profoundly grateful, understanding he was now in Meredith's debt.</p>
+
+<h3 id='may-1535-the-charterhouse-crisis'>May 1535: The Charterhouse Crisis</h3>
+
+<p>Shortly after Dan began his prestigious new position, his father nearly destroyed everything. Will Dogget got drunk at a local tavern and attempted to break down the Charterhouse gate when he found it closed. When a monk finally admitted him, he sat under a nut tree and sang waterman's ditties so profane they had "certainly never been heard in the Charterhouse before."</p>
+
+<p>Dan was summoned from his duties on the royal barge. The prior agreed to let Will stay only on condition that he remain within the monastery gates - a restriction Dan doubted his father could keep. Remarkably, Will reformed after <a href="characters/Peter-Meredith-1488.html">Peter Meredith</a> entered the Charterhouse. The priest's influence - whether spiritual companionship or simple friendship - kept the old man content and well-behaved.</p>
+
+<h3 id='may-1535-witness-to-power'>May 1535: Witness to Power</h3>
+
+<p>Dan rowed the king's gilded barge from Greenwich to Hampton Court just after Henry VIII and Thomas Cromwell arrested the prior of the London Charterhouse and two other priors for refusing to take the oath recognizing Henry as head of the Church. The three men were condemned to execution within five days. As Dan rowed, he watched the king's bearded head and Cromwell's broad, pale, sulky face in the cabin behind him, wondering what they were planning next. He worried what this would mean for the other Charterhouse monks - including Peter Meredith - and for his father.</p>
+
+<h3 id='the-hampton-court-garden-incident'>The Hampton Court Garden Incident</h3>
+
+<p>Dan nearly lost everything when he accidentally entered a garden at Hampton Court and encountered the king in a compromising situation. The specifics of what he witnessed are not detailed, but it was serious enough that he faced grave danger. He should not have been in that garden and should have walked away when he heard laughter, but he had not realized the king was there.</p>
+
+<p>The incident put Dan in mortal peril and set in motion events that would cost his friend <a href="characters/Rowland-Bull-1503.html">Rowland Bull</a> his life.</p>
+
+<h3 id='1535-the-tower-debt'>1535: The Tower Debt</h3>
+
+<p>When Rowland Bull was condemned to the Tower for refusing to take the oath and helping Peter Meredith, Thomas Meredith came to Dan with a request that was really a demand - calling in the debt Dan owed him. The specific task Meredith asked of Dan is not fully detailed in the text, but it was connected to Rowland's fate and involved considerable risk. The phrase "I told you I'd think of something" suggests Meredith had found a way to help Rowland, but required Dan's assistance to execute it.</p>
+
+<p>Dan complied, understanding the debt he owed, though the task clearly troubled him. His loyalty to Meredith and his sense of obligation outweighed his misgivings.</p>
+
+<h3 id='later-life-the-royal-barge'>Later Life: The Royal Barge</h3>
+
+<p>Sometime in later life - likely in the 1560s-1580s - Dan came upon one of King Henry's old barges in sorry condition. It was not a great state barge, just one of several for daily use that the prodigal monarch had maintained at his riverside palaces. Under Elizabeth I's more frugal regime, it had lain unused for a dozen years before the bargemaster was told to sell it off.</p>
+
+<p>Saddened to see its ruin, Dan bought it himself and brought it to his son's boatyard. His youngest son had gone into boat repair rather than becoming a waterman (being less of a giant than his brothers), working with his uncle Carpenter before establishing a thriving boat repair business in Southwark. Dan declared the barge would belong to his infant grandson John, who had just been born.</p>
+
+<p>Year after year, Dan and then his son lovingly restored the vessel, polishing every plank until it gleamed, repairing the gilded cabin, and maintaining the velvet curtains. It became a family treasure, passed down with love.</p>
+
+<h3 id='c-1599-last-mention'>c. 1599: Last Mention</h3>
+
+<p>By 1599, Dan was an old man, if still alive. The restored royal barge he had saved and passed to his grandson was finally put to magnificent use - as a ferry to transport playgoers to the Globe Theatre. The barge, with its gold and crimson trimming and a large pennant displaying the Globe, carried thirty passengers at a time across the Thames, pulled by six burly oarsmen including two of Dan's kinsmen. Dan Dogget's vision of preserving the barge "for him" had at last found worthy purpose in his grandson <a href="characters/John-Dogget-1570.html">John Dogget</a>'s hands.</p>
+
+<p>Whether Dan lived to see this moment is not specified, but given his birth around 1510, he would have been approximately 89 years old - unlikely but not impossible for the era.</p>
+
+<h2 id='relationships'>Relationships</h2>
+
+<h3 id='will-dogget'>Will Dogget</h3>
+
+<p>Dan's relationship with his father was characterized by duty, exasperation, and ultimate devotion. Will was "a standing joke" to Dan's friends, but his drunken escapades caused his son serious trouble. Despite this, Dan could not "just throw the old man out" and tried repeatedly to find a solution. When his sister refused to take Will, Dan brought him to live with his own family, then gratefully accepted Thomas Meredith's help in placing him at the Charterhouse. Even after Will's disgraceful behavior nearly cost Dan his position, he continued to fulfill his filial obligations. The relief Dan felt when Peter Meredith's influence reformed his father suggests the burden had been considerable.</p>
+
+<h3 id='thomas-meredith'>Thomas Meredith</h3>
+
+<p>Dan's relationship with Thomas Meredith was that of grateful client to powerful patron. Dan served Meredith as his regular waterman, ferrying him between palaces and the city. He explained his predicament during one of their trips, and Meredith saw an opportunity to acquire a useful, obligated servant. When Meredith secured Dan's appointment to the king's barge and solved the problem of Will, Dan was "in an agitated state" with hope and "awestruck" when his prayers were answered.</p>
+
+<p>Dan understood the transaction clearly. Meredith explained his philosophy: he gathered dozens of people in various places upon whom he could call. Dan accepted this arrangement gratefully, repeatedly asking "How can I repay you, sir?" The answer came when Meredith needed something dangerous done. Dan complied without hesitation, demonstrating the depth of his obligation and loyalty.</p>
+
+<h3 id='margaret-dogget'>Margaret Dogget</h3>
+
+<p>Dan was "devoted to his tubby wife Margaret and their brood of happy children." She was described as squat and sturdy, and together they raised their family first in Southwark and later at Hampton Court. Dan's willingness to bring Carpenter's family to live with them demonstrates that Margaret shared his sense of family duty, or at least supported his decisions. She appears to have been a capable, supportive partner in managing their complicated household.</p>
+
+<h3 id='matthew-carpenter'>Matthew Carpenter</h3>
+
+<p>Dan showed great kindness to his brother-in-law, offering him and his four children a place to live after Carpenter's wife died in childbirth: "They can live with you until things get sorted out." The two men were friendly and worked together at Hampton Court, with Carpenter showing Dan his handiwork in the Great Hall. Dan took an interest in Carpenter's life and family, demonstrating genuine affection for his brother-in-law.</p>
+
+<h3 id='peter-meredith'>Peter Meredith</h3>
+
+<p>Dan was grateful to Peter for reforming his father. The transformation was so remarkable that Dan called it "the most remarkable thing I've ever seen." Later, when the Charterhouse monks faced persecution, Dan's concern for Peter's fate was evident in his worried thoughts as he rowed the king's barge. Peter's role in Dan's life was indirect but significant - he made Dan's family situation manageable.</p>
+
+<h2 id='historical-context'>Historical Context</h2>
+
+<p>Dan Dogget lived through one of the most turbulent periods in English history - the English Reformation under Henry VIII. As a waterman, he occupied a unique position in Tudor society: working class in status but intimately connected to the movements of power. He literally rowed the kingdom's most powerful men between their palaces and witnessed their conversations and moods.</p>
+
+<p>The watermen of London were legendary for their loud mouths and rough manners, and Dan was no exception, but his trade also brought him into daily contact with courtiers, gentlemen, and even the king himself. This proximity to power without any power of his own made his position both privileged and vulnerable.</p>
+
+<p>His appointment to the king's barge came during Henry VIII's break from Rome. In 1533, the king's marriage to Catherine of Aragon was annulled, he married Anne Boleyn, and their daughter Elizabeth was born. Thomas Cromwell was consolidating power as the king's secretary, and Thomas Cranmer became Archbishop of Canterbury. Dan's patron, Thomas Meredith, was connected to both Cromwell and Cranmer, placing Dan close to the center of revolutionary religious change.</p>
+
+<p>By May 1535, when Dan rowed the king from Greenwich to Hampton Court after the arrest of the Charterhouse priors, the religious persecution was accelerating. The three priors would be hanged, drawn, and quartered at Tyburn for refusing to recognize Henry as Supreme Head of the Church. Dan's father lived in the very monastery that would become a symbol of Catholic resistance and martyrdom. Eighteen Charterhouse monks would eventually be executed for their faith, including some Dan would have known.</p>
+
+<p>Dan's life illustrates how ordinary people were caught up in the religious upheavals of the Reformation. Through no choice of his own, he became entangled in deadly politics when he served the wrong patron, witnessed the wrong scene, or knew people who refused the oath. His story shows how survival in Henry VIII's reign often meant owing debts to dangerous men and being called upon to perform morally ambiguous services.</p>
+
+<h2 id='themes-and-significance'>Themes and Significance</h2>
+
+<p>Dan Dogget embodies several important themes in Rutherford's London:</p>
+
+<p><strong>The Weight of Obligation</strong>: Dan's life was defined by obligations - to his wife and children, to his father, to his sister's family, to his brother-in-law, and ultimately to his patron Thomas Meredith. These obligations were the bonds that held Tudor society together, but they could also trap people. Dan's predicament - needing money to support his family, which required getting on the "right side of a gentleman" - shows how patronage systems worked at all levels of society. The debt he owed Meredith was both his salvation and his snare.</p>
+
+<p><strong>Power and Vulnerability</strong>: Despite his legendary physical strength - stronger than any man on the Thames - Dan was essentially powerless in the face of political and social forces. He could break chains across his chest but was bound by invisible chains of debt and obligation. His proximity to power through his work on the king's barge only made him more vulnerable, as his accidental presence in the Hampton Court garden demonstrated.</p>
+
+<p><strong>The Reformation's Reach</strong>: Dan's story shows how the religious conflicts of the Reformation reached into every corner of English life. He was not a religious man himself - no mention is made of his beliefs - yet the persecution of the Charterhouse monks directly affected his family. His father lived there; Peter Meredith was imprisoned there; Rowland Bull died because of events connected to it. No one, not even a humble waterman, could escape the religious upheavals.</p>
+
+<p><strong>Continuity and Heritage</strong>: Dan's preservation and restoration of the king's barge represents the passing down of both material heritage and craft knowledge. He bought the ruined vessel for his grandson and spent years restoring it with his son. This act of love and preservation connects three generations and two centuries, from Henry VIII's prodigal court to Elizabeth I's Globe Theatre. The barge, like the white flash in the Dogget hair, is a hereditary trait - a physical link between past and future.</p>
+
+<p><strong>The River as Constant</strong>: Throughout the political and religious turmoil of the 1530s, Dan found peace and contentment in the physical act of rowing. The river was his constant, offering a rhythm and purpose that transcended the deadly intrigues of court. His love of the waterman's life - "the feel of the blades dipping neatly into the water, the surge of the boat, the smell of the riverweed" - represents the enduring patterns of London life that continued regardless of who sat on the throne or which church held power.</p>
+
+<p>Dan Dogget's life arc, from struggling waterman to king's bargeman to patriarch whose vision blessed his grandson's venture, traces both the opportunities and dangers of Tudor London. He exemplifies the ordinary men whose strength, loyalty, and family bonds sustained the city through its most turbulent transformations.</p>
+
+<h2 id='key-quotes-about-dan-dogget'>Key Quotes About Dan Dogget</h2>
+
+<blockquote class='character-quote'>
+<div class='quote-text'>"Dan Dogget was a giant. Over two centuries had passed since Barnikel of Billingsgate had visited the Dogget sisters on the Bankside and left one of them with a baby."</div>
+<div class='quote-attribution'>Narrative voice, establishing Dan's impressive lineage and physical stature</div>
+</blockquote>
+
+<blockquote class='character-quote'>
+<div class='quote-text'>"Dan Dogget was six foot three; big-boned and spare in build, with a huge mane of black hair with a flash of white over his forehead. He was the strongest waterman on the Thames. He could break a chain across his chest."</div>
+<div class='quote-attribution'>Narrative description of Dan's legendary physical presence</div>
+</blockquote>
+
+<blockquote class='character-quote'>
+<div class='quote-text'>"You know your problem, Daniel? You've got too many obligations."</div>
+<div class='quote-attribution'>Margaret's brother to Dan, identifying the central challenge of Dan's life</div>
+</blockquote>
+
+<blockquote class='character-quote'>
+<div class='quote-text'>"Not that he had ever complained. He was devoted to his tubby wife Margaret and their brood of happy children; he was kind to his sister's family."</div>
+<div class='quote-attribution'>Narrative voice on Dan's character and devotion to family</div>
+</blockquote>
+
+<blockquote class='character-quote'>
+<div class='quote-text'>"Saddened to see its ruin, Dogget had bought it himself and brought it to his son's boatyard and, since his little grandson John had just been born, had cheerfully declared: 'It's for him.'"</div>
+<div class='quote-attribution'>Narrative describing Dan's preservation of the king's barge for his grandson</div>
+</blockquote>
+
+<h2 id='key-quotes-said-by-dan-dogget'>Key Quotes Said by Dan Dogget</h2>
+
+<blockquote class='character-quote'>
+<div class='quote-text'>"I can't handle him any more."</div>
+<div class='quote-attribution'>Dan about his father's drunken escapades</div>
+</blockquote>
+
+<blockquote class='character-quote'>
+<div class='quote-text'>"It'll cost money."</div>
+<div class='quote-attribution'>Dan's resigned conclusion about solving his father's situation</div>
+</blockquote>
+
+<blockquote class='character-quote'>
+<div class='quote-text'>"Why sir, I'd do whatever you ask."</div>
+<div class='quote-attribution'>Dan to Thomas Meredith, pledging his service in exchange for help</div>
+</blockquote>
+
+<blockquote class='character-quote'>
+<div class='quote-text'>"How can I repay you, sir?"</div>
+<div class='quote-attribution'>Dan to Meredith after his father is placed at the Charterhouse</div>
+</blockquote>
+
+<blockquote class='character-quote'>
+<div class='quote-text'>"You're to behave yourself, now. If you get thrown out of here, that's it. I'm not taking you back."</div>
+<div class='quote-attribution'>Dan admonishing his father at the Charterhouse</div>
+</blockquote>
+
+<blockquote class='character-quote'>
+<div class='quote-text'>"I've no room."</div>
+<div class='quote-attribution'>Dan firmly refusing to take his father back after the drunken incident</div>
+</blockquote>
+
+        </div>
+    </div>
+</body>
+</html>

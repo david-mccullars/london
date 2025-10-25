@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="/london/">
+    <title>Penny Family Tree</title>
+    <link rel="stylesheet" href="css/london.css">
+    <link rel="stylesheet" href="css/family-tree.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.33.1/cytoscape.min.js"></script>
+</head>
+<body class="family-tree-page" data-family="penny">
+    
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="families/Barnikel.html">Barnikel</a></li>
+        <li><a href="families/Bull.html">Bull</a></li>
+        <li><a href="families/Carpenter.html">Carpenter</a></li>
+        <li><a href="families/Dogget.html">Dogget</a></li>
+        <li><a href="families/Ducket.html">Ducket</a></li>
+        <li><a href="families/Fleming.html">Fleming</a></li>
+        <li><a href="families/Meredith.html">Meredith</a></li>
+        <li><a href="families/Penny.html" class="current">Penny</a></li>
+        <li><a href="families/Silversleeves.html">Silversleeves</a></li>
+    </ul>
+    <select onchange="if(this.value) window.location.href=this.value">
+        <option value="">Choose a family...</option>
+        <option value="index.html">Home</option>
+        <option value="families/Barnikel.html">Barnikel</option>
+        <option value="families/Bull.html">Bull</option>
+        <option value="families/Carpenter.html">Carpenter</option>
+        <option value="families/Dogget.html">Dogget</option>
+        <option value="families/Ducket.html">Ducket</option>
+        <option value="families/Fleming.html">Fleming</option>
+        <option value="families/Meredith.html">Meredith</option>
+        <option value="families/Penny.html" selected>Penny</option>
+        <option value="families/Silversleeves.html">Silversleeves</option>
+    </select>
+</nav>
+
+
+    <div class="container">
+        <header>
+            <h1>The Penny Family Line</h1>
+            <p class="subtitle">Huguenot Clerks and Entrepreneurs</p>
+        </header>
+
+        <div id="cy"></div>
+    </div>
+
+    <script>
+        // Embed the family tree data
+        const familyData = {"nodes":[{"id":"Eugene-Penny-1648","name":"Eugene Penny","year":"1648","chapter":"stpauls","role":null,"portrait":"images/characters/sm/Eugene-Penny-1648.png","page":"characters/Eugene-Penny-1648.html"},{"id":"Eugene-Penny-1801","name":"Eugene Penny","year":"1801","chapter":"lavenderhill","role":null,"portrait":"images/characters/sm/Eugene-Penny-1801.png","page":"characters/Eugene-Penny-1801.html"},{"id":"Mary-Forsyth-1801","name":"Mary Forsyth","year":"1801","chapter":"lavenderhill","role":null,"portrait":"images/characters/sm/Mary-Forsyth-1801.png","page":"characters/Mary-Forsyth-1801.html"},{"id":"Penny-1823","name":"Penny","year":"1823","chapter":"crystal","role":null,"portrait":"images/characters/sm/Penny-1823.png","page":"characters/Penny-1823.html"},{"id":"Harriet-Dogget-1828","name":"Harriet Dogget","year":"1828","chapter":"crystal","role":null,"portrait":"images/characters/sm/Harriet-Dogget-1828.png","page":"characters/Harriet-Dogget-1828.html"},{"id":"Young-Penny-1855","name":"Young Penny","year":"1855","chapter":"cuttysark","role":null,"portrait":"images/characters/sm/Young-Penny-1855.png","page":"characters/Young-Penny-1855.html"},{"id":"Nancy-Dogget-1868","name":"Nancy Dogget","year":"1868","chapter":"cuttysark","role":null,"portrait":"images/characters/sm/Nancy-Dogget-1868.png","page":"characters/Nancy-Dogget-1868.html"},{"id":"Sir-Eugene-Penny-1930","name":"Sir Eugene Penny","year":"1930","chapter":"river","role":null,"portrait":"images/characters/sm/Sir-Eugene-Penny-1930.png","page":"characters/Sir-Eugene-Penny-1930.html"}],"links":[{"source":"Eugene-Penny-1801","target":"Mary-Forsyth-1801","type":"marriage"},{"source":"Penny-1823","target":"Harriet-Dogget-1828","type":"marriage"},{"source":"Young-Penny-1855","target":"Nancy-Dogget-1868","type":"marriage"},{"source":"Eugene-Penny-1801","target":"Penny-1823","type":"child"},{"source":"Mary-Forsyth-1801","target":"Penny-1823","type":"child"},{"source":"Penny-1823","target":"Young-Penny-1855","type":"child"},{"source":"Harriet-Dogget-1828","target":"Young-Penny-1855","type":"child"},{"source":"Eugene-Penny-1648","target":"Eugene-Penny-1801","type":"descent","label":"~5 generations (153 years)","gap":null},{"source":"Young-Penny-1855","target":"Sir-Eugene-Penny-1930","type":"descent","label":"~3 generations (75 years)","gap":null}],"chapters":[{"id":"stpauls","title":"ST PAULS","subtitle":"(1666)"},{"id":"lavenderhill","title":"LAVENDER HILL","subtitle":"(1820s)"},{"id":"crystal","title":"THE CRYSTAL PALACE","subtitle":"(1851)"},{"id":"cuttysark","title":"THE CUTTY SARK","subtitle":"(1888)"},{"id":"river","title":"THE RIVER","subtitle":"(1997)"}],"layout":{}};
+    </script>
+    <script src="js/family-tree.js"></script>
+</body>
+</html>

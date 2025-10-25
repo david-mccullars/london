@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="/london/">
+    <title>Meredith Family Tree</title>
+    <link rel="stylesheet" href="css/london.css">
+    <link rel="stylesheet" href="css/family-tree.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.33.1/cytoscape.min.js"></script>
+</head>
+<body class="family-tree-page" data-family="meredith">
+    
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="families/Barnikel.html">Barnikel</a></li>
+        <li><a href="families/Bull.html">Bull</a></li>
+        <li><a href="families/Carpenter.html">Carpenter</a></li>
+        <li><a href="families/Dogget.html">Dogget</a></li>
+        <li><a href="families/Ducket.html">Ducket</a></li>
+        <li><a href="families/Fleming.html">Fleming</a></li>
+        <li><a href="families/Meredith.html" class="current">Meredith</a></li>
+        <li><a href="families/Penny.html">Penny</a></li>
+        <li><a href="families/Silversleeves.html">Silversleeves</a></li>
+    </ul>
+    <select onchange="if(this.value) window.location.href=this.value">
+        <option value="">Choose a family...</option>
+        <option value="index.html">Home</option>
+        <option value="families/Barnikel.html">Barnikel</option>
+        <option value="families/Bull.html">Bull</option>
+        <option value="families/Carpenter.html">Carpenter</option>
+        <option value="families/Dogget.html">Dogget</option>
+        <option value="families/Ducket.html">Ducket</option>
+        <option value="families/Fleming.html">Fleming</option>
+        <option value="families/Meredith.html" selected>Meredith</option>
+        <option value="families/Penny.html">Penny</option>
+        <option value="families/Silversleeves.html">Silversleeves</option>
+    </select>
+</nav>
+
+
+    <div class="container">
+        <header>
+            <h1>The Meredith Family Line</h1>
+            <p class="subtitle">Welsh Gentry and Reformers</p>
+        </header>
+
+        <div id="cy"></div>
+    </div>
+
+    <script>
+        // Embed the family tree data
+        const familyData = {"nodes":[{"id":"Peter-Meredith-1488","name":"Peter Meredith","year":"1488","chapter":"hampton","role":null,"portrait":"images/characters/sm/Peter-Meredith-1488.png","page":"characters/Peter-Meredith-1488.html"},{"id":"Thomas-Meredith-1507","name":"Thomas Meredith","year":"1507","chapter":"hampton","role":null,"portrait":"images/characters/sm/Thomas-Meredith-1507.png","page":"characters/Thomas-Meredith-1507.html"},{"id":"Susan-Meredith-1505","name":"Susan Meredith","year":"1505","chapter":"hampton","role":null,"portrait":"images/characters/sm/Susan-Meredith-1505.png","page":"characters/Susan-Meredith-1505.html"},{"id":"Rowland-Bull-1503","name":"Rowland Bull","year":"1503","chapter":"hampton","role":null,"portrait":"images/characters/sm/Rowland-Bull-1503.png","page":"characters/Rowland-Bull-1503.html"},{"id":"Edmund-Meredith-1575","name":"Edmund Meredith","year":"1575","chapter":"globe","role":null,"portrait":"images/characters/sm/Edmund-Meredith-1575.png","page":"characters/Edmund-Meredith-1575.html"},{"id":"Richard-Meredith-1640","name":"Richard Meredith","year":"1640","chapter":"london_fire","role":null,"portrait":"images/characters/sm/Richard-Meredith-1640.png","page":"characters/Richard-Meredith-1640.html"},{"id":"Jack-Meredith-1722","name":"Jack Meredith","year":"1722","chapter":"gin_lane","role":null,"portrait":"images/characters/sm/Jack-Meredith-1722.png","page":"characters/Jack-Meredith-1722.html"},{"id":"Meredith-1788","name":"Meredith","year":"1788","chapter":"lavender","role":null,"portrait":"images/characters/sm/Meredith-1788.png","page":"characters/Meredith-1788.html"},{"id":"Colonel-Meredith-1830","name":"Colonel Meredith","year":"1830","chapter":"cutty_sark","role":null,"portrait":"images/characters/sm/Colonel-Meredith-1830.png","page":"characters/Colonel-Meredith-1830.html"},{"id":"Violet-Bull-1889","name":"Violet Bull","year":"1889","chapter":"cutty_sark","role":null,"portrait":"images/characters/sm/Violet-Bull-1889.png","page":"characters/Violet-Bull-1889.html"},{"id":"Henry-Meredith-1894","name":"Henry Meredith","year":"1894","chapter":"suffragette","role":null,"portrait":"images/characters/sm/Henry-Meredith-1894.png","page":"characters/Henry-Meredith-1894.html"},{"id":"Frederick-Meredith-1900","name":"Frederick Meredith","year":"1900","chapter":"suffragette","role":null,"portrait":"images/characters/sm/Frederick-Meredith-1900.png","page":"characters/Frederick-Meredith-1900.html"},{"id":"Helen-Meredith-1903","name":"Helen Meredith","year":"1903","chapter":"suffragette","role":null,"portrait":"images/characters/sm/Helen-Meredith-1903.png","page":"characters/Helen-Meredith-1903.html"}],"links":[{"source":"Susan-Meredith-1505","target":"Rowland-Bull-1503","type":"marriage"},{"source":"Colonel-Meredith-1830","target":"Violet-Bull-1889","type":"marriage"},{"source":"Peter-Meredith-1488","target":"Thomas-Meredith-1507","type":"sibling"},{"source":"Thomas-Meredith-1507","target":"Susan-Meredith-1505","type":"sibling"},{"source":"Henry-Meredith-1894","target":"Frederick-Meredith-1900","type":"sibling"},{"source":"Frederick-Meredith-1900","target":"Helen-Meredith-1903","type":"sibling"},{"source":"Thomas-Meredith-1507","target":"Edmund-Meredith-1575","type":"child"},{"source":"Colonel-Meredith-1830","target":"Henry-Meredith-1894","type":"child"},{"source":"Violet-Bull-1889","target":"Henry-Meredith-1894","type":"child"},{"source":"Colonel-Meredith-1830","target":"Frederick-Meredith-1900","type":"child"},{"source":"Violet-Bull-1889","target":"Frederick-Meredith-1900","type":"child"},{"source":"Colonel-Meredith-1830","target":"Helen-Meredith-1903","type":"child"},{"source":"Violet-Bull-1889","target":"Helen-Meredith-1903","type":"child"},{"source":"Edmund-Meredith-1575","target":"Richard-Meredith-1640","type":"descent","label":"~2 generations (65 years)","gap":null},{"source":"Richard-Meredith-1640","target":"Jack-Meredith-1722","type":"descent","label":"~3 generations (82 years)","gap":null},{"source":"Jack-Meredith-1722","target":"Meredith-1788","type":"descent","label":"~2 generations (66 years)","gap":null},{"source":"Meredith-1788","target":"Colonel-Meredith-1830","type":"descent","label":"~2 generations (42 years)","gap":null}],"chapters":[{"id":"hampton","title":"HAMPTON COURT","subtitle":"(1540s)"},{"id":"globe","title":"THE GLOBE","subtitle":"(1599)"},{"id":"london_fire","title":"LONDON'S FIRE","subtitle":"(1666)"},{"id":"gin_lane","title":"GIN LANE","subtitle":"(1750s)"},{"id":"lavender","title":"LAVENDER HILL","subtitle":"(1820s)"},{"id":"cutty_sark","title":"THE CUTTY SARK","subtitle":"(1888)"},{"id":"suffragette","title":"THE SUFFRAGETTE","subtitle":"(1910)"}],"layout":{"couples":[{"person1":"Susan-Meredith-1505","person2":"Rowland-Bull-1503","person1_side":"left","offset":-90}],"singles":{"Peter-Meredith-1488":-230,"Thomas-Meredith-1507":-830,"Henry-Meredith-1894":-285,"Frederick-Meredith-1900":-300,"Helen-Meredith-1903":-285}}};
+    </script>
+    <script src="js/family-tree.js"></script>
+</body>
+</html>

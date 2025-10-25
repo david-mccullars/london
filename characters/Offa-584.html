@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="/london/">
+    <title>Offa - London Characters</title>
+    <link rel="stylesheet" href="css/london.css">
+    <link rel="stylesheet" href="css/character.css">
+</head>
+<body class="character-page" data-family="dogget">
+    
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="families/Barnikel.html">Barnikel</a></li>
+        <li><a href="families/Bull.html">Bull</a></li>
+        <li><a href="families/Carpenter.html">Carpenter</a></li>
+        <li><a href="families/Dogget.html" class="current">Dogget</a></li>
+        <li><a href="families/Ducket.html">Ducket</a></li>
+        <li><a href="families/Fleming.html">Fleming</a></li>
+        <li><a href="families/Meredith.html">Meredith</a></li>
+        <li><a href="families/Penny.html">Penny</a></li>
+        <li><a href="families/Silversleeves.html">Silversleeves</a></li>
+    </ul>
+    <select onchange="if(this.value) window.location.href=this.value">
+        <option value="">Choose a family...</option>
+        <option value="index.html">Home</option>
+        <option value="families/Barnikel.html">Barnikel</option>
+        <option value="families/Bull.html">Bull</option>
+        <option value="families/Carpenter.html">Carpenter</option>
+        <option value="families/Dogget.html" selected>Dogget</option>
+        <option value="families/Ducket.html">Ducket</option>
+        <option value="families/Fleming.html">Fleming</option>
+        <option value="families/Meredith.html">Meredith</option>
+        <option value="families/Penny.html">Penny</option>
+        <option value="families/Silversleeves.html">Silversleeves</option>
+    </select>
+</nav>
+
+
+    <div class="character-container">
+        <div class="character-header">
+            <h1>Offa</h1>
+            <div class="birth-year">c. 584</div>
+        </div>
+
+        <img src="images/characters/Offa-584.png" alt="Offa" class="character-portrait-large">
+
+        <div class="character-body">
+<div class="toc-container">
+  <div class="toc-header">
+    <span class="toc-title">Contents</span>
+    <button class="toc-toggle" onclick="toggleTOC()"><<</button>
+  </div>
+  <div class="toc-content">
+        <div class='toc-section'><a href='characters/Offa-584.html#overview'>Overview</a></div>
+        <div class='toc-section'><a href='characters/Offa-584.html#physical-description'>Physical Description</a></div>
+        <div class='toc-section'><a href='characters/Offa-584.html#character-and-personality'>Character and Personality</a></div>
+        <div class='toc-section'><a href='characters/Offa-584.html#life-and-events'>Life and Events</a></div>
+        <div class='toc-subsection'><a href='characters/Offa-584.html#604-enslavement'>604: Enslavement</a></div>
+        <div class='toc-subsection'><a href='characters/Offa-584.html#604-life-at-lundenwic'>604: Life at Lundenwic</a></div>
+        <div class='toc-subsection'><a href='characters/Offa-584.html#604-encounter-with-bishop-mellitus'>604: Encounter with Bishop Mellitus</a></div>
+        <div class='toc-subsection'><a href='characters/Offa-584.html#604-605-the-failed-reconciliation-scheme'>604-605: The Failed Reconciliation Scheme</a></div>
+        <div class='toc-subsection'><a href='characters/Offa-584.html#605-exile-and-freedom'>605: Exile and Freedom</a></div>
+        <div class='toc-section'><a href='characters/Offa-584.html#relationships'>Relationships</a></div>
+        <div class='toc-subsection'><a href='characters/Offa-584.html#ricola'>Ricola</a></div>
+        <div class='toc-subsection'><a href='characters/Offa-584.html#elfgiva'>Elfgiva</a></div>
+        <div class='toc-subsection'><a href='characters/Offa-584.html#cerdic'>Cerdic</a></div>
+        <div class='toc-subsection'><a href='characters/Offa-584.html#bishop-mellitus'>Bishop Mellitus</a></div>
+        <div class='toc-section'><a href='characters/Offa-584.html#historical-context'>Historical Context</a></div>
+        <div class='toc-section'><a href='characters/Offa-584.html#themes-and-significance'>Themes and Significance</a></div>
+        <div class='toc-subsection'><a href='characters/Offa-584.html#cultural-transition-and-memory'>Cultural Transition and Memory</a></div>
+        <div class='toc-subsection'><a href='characters/Offa-584.html#spiritual-awakening'>Spiritual Awakening</a></div>
+        <div class='toc-subsection'><a href='characters/Offa-584.html#love-and-consequences'>Love and Consequences</a></div>
+        <div class='toc-subsection'><a href='characters/Offa-584.html#resilience-and-adaptation'>Resilience and Adaptation</a></div>
+        <div class='toc-subsection'><a href='characters/Offa-584.html#the-lost-city'>The Lost City</a></div>
+        <div class='toc-section'><a href='characters/Offa-584.html#key-quotes-about-offa'>Key Quotes About Offa</a></div>
+        <div class='toc-section'><a href='characters/Offa-584.html#key-quotes-said-by-offa'>Key Quotes Said by Offa</a></div>
+  </div>
+</div>
+<script>
+  function toggleTOC() {
+    const container = document.querySelector('.toc-container');
+    const content = document.querySelector('.toc-content');
+    const title = document.querySelector('.toc-title');
+    const toggle = document.querySelector('.toc-toggle');
+
+    if (container.classList.contains('collapsed')) {
+      container.classList.remove('collapsed');
+      content.style.display = 'block';
+      title.style.display = 'inline';
+      toggle.textContent = '<<';
+    } else {
+      container.classList.add('collapsed');
+      content.style.display = 'none';
+      title.style.display = 'none';
+      toggle.textContent = '☰';
+    }
+  }
+</script>
+
+
+<div class='basic-info-box'>
+<div class='info-row'>
+<div class='info-label'>Born</div>
+<div class='info-content'>
+c. 584</div>
+</div>
+<div class='info-row'>
+<div class='info-label'>Died</div>
+<div class='info-content'>
+Unknown</div>
+</div>
+<div class='info-row'>
+<div class='info-label'>Occupation</div>
+<div class='info-content'>
+Agricultural laborer, slave</div>
+</div>
+<div class='info-row'>
+<div class='info-label'>Social Status</div>
+<div class='info-content'>
+Poor freeman, then slave</div>
+</div>
+<div class='info-row'>
+<div class='info-label'>Spouse</div>
+<div class='info-content'>
+<a href="characters/Ricola-589.html">Ricola</a></div>
+</div>
+<div class='info-row'>
+<div class='info-label'>Father</div>
+<div class='info-content'>
+Unnamed (singer, adopted by Saxon village)</div>
+</div>
+<div class='info-row'>
+<div class='info-label'>Grandfather</div>
+<div class='info-content'>
+Charcoal-burner in Essex forests</div>
+</div>
+<div class='info-row'>
+<div class='info-label'>Ancestor</div>
+<div class='info-content'>
+<a href="characters/Julius-231.html">Julius</a> (Roman coin forger)</div>
+</div>
+<div class='info-row'>
+<div class='info-label'>Chapters</div>
+<div class='info-content'>
+The Rood</div>
+</div>
+</div>
+<h2 id='overview'>Overview</h2>
+
+<p>Offa is a young Saxon villager of mixed Romano-British and Saxon heritage who, despite being enslaved for defending his wife's honor, demonstrates remarkable resilience, curiosity, and spiritual openness. Nicknamed "Duck" by his fellow villagers, he is descended from a Roman family that once lived in Londinium and retains fragments of knowledge about the lost city. His story centers on his enslavement to the merchant <a href="characters/Cerdic-555.html">Cerdic</a> and the merchant's wife <a href="characters/Elfgiva-Godiva-567.html">Elfgiva Godiva</a>, his encounter with Christianity through Bishop <a href="https://en.wikipedia.org/wiki/Mellitus" target="_blank" rel="noopener noreferrer">Mellitus</a>, and his fateful involvement in a scheme to reconcile his master and mistress that ends in his exile.</p>
+
+<h2 id='physical-description'>Physical Description</h2>
+
+<p>Offa is described as wiry and smaller than the sturdy Saxon villagers around him. He has brown hair where most Saxons are fair, though his eyes are blue like theirs. He is twenty years old, eager, and possesses a certain quickness in his thoughts that sets him apart. His appearance suggests his mixed Romano-British and Saxon heritage.</p>
+
+<h2 id='character-and-personality'>Character and Personality</h2>
+
+<p>Offa is characterized by his eager intelligence, curiosity, and adaptability. Unlike the Saxon villagers who are wary of the ruined Roman city of Londinium, Offa is drawn to it, possessing ancestral knowledge of its treasures and mysteries. He is resourceful and optimistic, repeatedly assuring his wife <a href="characters/Ricola-589.html">Ricola</a> that "we won't be slaves for long."</p>
+
+<p>Despite his lowly status, Offa is bold enough to speak directly with Bishop Mellitus and intelligent enough to be cautious around powerful figures. He displays a romantic, protective nature, having attacked the village elder for attempting to rape Ricola, an action that led to his enslavement. This passionate defense of his wife shows both his love and, as some villagers thought, a slight loss of reason.</p>
+
+<p>Offa is spiritually receptive and emotionally open. When he hears Bishop Mellitus preach about Christianity, he is profoundly moved, experiencing "a sense that fate itself, the grim, unknowable <i>Wyrd</i>, might instead be something reassuring, happy." This produces in him "a feeling of ineffable joy that made him tremble."</p>
+
+<p>He is practical and hardworking, quickly adapting to life at Lundenwic and impressing with his willingness to learn. His observational skills are keen – he notices the trading activities, the geography of the Thames, and the relationships between his master and mistress. However, he can be led by his more practical wife Ricola into schemes that exceed his better judgment.</p>
+
+<h2 id='life-and-events'>Life and Events</h2>
+
+<h3 id='604-enslavement'>604: Enslavement</h3>
+
+<p>Offa begins the story as a poor freeman in a Saxon village in Essex, possessing only a "farthing" (quarter yardland) of land. When the village elder attempts to seduce and nearly rape his wife Ricola, Offa attacks him, committing the grave crime of not just striking a superior but doing so with a pin – an act reminiscent of pagan human sacrifice that carries dire implications.</p>
+
+<p>Sentenced to death by impalement alongside his wife, they are saved at the last moment by <a href="characters/Elfgiva-Godiva-567.html">Elfgiva</a>, wife of the merchant <a href="characters/Cerdic-555.html">Cerdic</a>, who purchases them as slaves for a silver coin. Their hair is cut short as the mark of slavery, and they are taken west to Lundenwic, the small trading post near the ruins of Roman Londinium.</p>
+
+<h3 id='604-life-at-lundenwic'>604: Life at Lundenwic</h3>
+
+<p>Offa and Ricola quickly adapt to their new circumstances at Lundenwic. Offa is assigned to work under Cerdic's foreman, helping with harvests and various trading activities. He discovers that Lundenwic is a surprisingly busy trading post where ships arrive from Scandinavia, Frisia, and Germania carrying pottery, wine, glass, and other goods. He also learns about the profitable slave trade that makes his master wealthy.</p>
+
+<p>Offa is fascinated by the first proper seagoing vessel he sees – a Norse longship with a rising keel – and by the sophisticated goods it carries. He begins to understand the great Roman heritage his ancestors knew, seeing glass for the first time and experiencing hints of the wider European world.</p>
+
+<p>His ancestral knowledge of Londinium proves valuable. His grandfather had told him of "two hills in the great city" and buried gold "near the top" of the western hill. Offa makes secret expeditions into the ruined city, fashioning a pick and shovel to search for this treasure, though he never finds it.</p>
+
+<h3 id='604-encounter-with-bishop-mellitus'>604: Encounter with Bishop Mellitus</h3>
+
+<p>While exploring the ruins of Londinium, Offa encounters Bishop <a href="https://en.wikipedia.org/wiki/Mellitus" target="_blank" rel="noopener noreferrer">Mellitus</a>, who has come from Canterbury to establish Christianity in the kingdom. The bishop, with his tonsured head that makes him look "like an egg," speaks to Offa about building a cathedral on the western hill. When Mellitus mysteriously offers to help Offa "find" what he's looking for, Offa becomes suspicious that the bishop knows about the treasure and retreats cautiously.</p>
+
+<p>This initial wariness gives way to profound spiritual experience at Christmas (Yuletide), when Mellitus preaches in the ruins. The bishop's sermon, delivered in masterful English that suggests study with royal poets, describes Christ as a kind of Anglo-Saxon hero-god, comparing him to Frey. Offa is deeply moved by the message of redemption, forgiveness, and resurrection. For the first time, he feels that fate (<i>Wyrd</i>) might be "something reassuring, happy" rather than grim and unknowable.</p>
+
+<p>Offa is baptized in the little stream with the rest of Cerdic's household, experiencing what the text describes as "ineffable joy." The bishop's words about reconciliation particularly strike him, as they seem to apply to the troubled relationship between his master and mistress.</p>
+
+<h3 id='604-605-the-failed-reconciliation-scheme'>604-605: The Failed Reconciliation Scheme</h3>
+
+<p>Offa's wife Ricola, who has become <a href="characters/Elfgiva-Godiva-567.html">Elfgiva</a>'s personal servant, devises a plan to reconcile the estranged couple. Cerdic had killed Elfgiva's brothers years before, and though she has stayed with him, the marriage has remained cold. Ricola believes that if given "just one little push," Elfgiva would return to her husband.</p>
+
+<p>Against Offa's better judgment – "Then she'll blame you," he protests – Ricola convinces him to participate. During the Yuletide feast, while Cerdic is occupied, Offa is supposed to deliver a message that Ricola needs help. The plan is for Elfgiva to go to their quarters, see Ricola apparently in a romantic embrace with the northern slave <a href="characters/Wistan-588.html">Wistan</a>, and then realize her own desires for reconciliation with Cerdic.</p>
+
+<p>The scheme goes disastrously wrong. Elfgiva is delayed at the feast, and Ricola's staged scene with Wistan turns real when the young slave, who has genuinely fallen for her, attempts actual intimacy. When Elfgiva finally arrives, she witnesses what appears to be a genuine liaison. She also finds Offa keeping watch, making the young couple appear complicit in something shameful.</p>
+
+<h3 id='605-exile-and-freedom'>605: Exile and Freedom</h3>
+
+<p>The consequence is swift and severe. Elfgiva, feeling betrayed by the slaves she had saved and trusted, orders them aboard a ship bound for Frankia where they will be sold into slavery. On the morning they are to depart, however, Offa and Ricola manage to escape.</p>
+
+<p>They flee to the island of Thorney (modern Westminster), where Offa constructs a crude hut sheltered by bushes and reinforced with snow. There, in the wild, they begin a new life. "Now we can let our hair grow," Offa says cheerfully, marking their return to freedom. Using fat from venison, he makes oil to rub into the welts around Ricola's neck from the slave chains.</p>
+
+<p>The narrative leaves them there, living off the land in the marshes and forests around the great ruined city, free but alone, having lost their place in Saxon society but gained each other and their liberty.</p>
+
+<h2 id='relationships'>Relationships</h2>
+
+<h3 id='ricola'>Ricola</h3>
+
+<p>Offa's relationship with his wife <a href="characters/Ricola-589.html">Ricola</a> is the emotional center of his story. He loves her so deeply that her near-rape by the village elder causes him to commit an act that costs them both their freedom and nearly their lives. The text notes that "he could not bear the thought of the assault" and that some villagers thought "he had slightly lost his reason."</p>
+
+<p>Despite being the more practical of the two, Ricola believes in Offa's optimistic assurances that they won't remain slaves for long. Their partnership is characterized by mutual support and affection. When they are enslaved together, they recover "like two puppies who had fallen into water and shaken themselves dry."</p>
+
+<p>Offa defers to Ricola's judgment on social matters, particularly regarding their mistress Elfgiva. When Ricola devises her reconciliation scheme, Offa goes along despite his misgivings, showing both his trust in her and his willingness to take risks for causes she believes in. The story ends with them together in exile, suggesting that their bond survives even the loss of everything else.</p>
+
+<h3 id='elfgiva'>Elfgiva</h3>
+
+<p>Offa's relationship with <a href="characters/Elfgiva-Godiva-567.html">Elfgiva Godiva</a> is that of a saved man to his savior, and then of a trusted slave to a mistress who treats him with relative kindness. She rescues him and Ricola from execution, making them her personal slaves. While Offa works primarily for Cerdic's foreman, he remains at Elfgiva's disposal.</p>
+
+<p>Offa is perceptive enough to understand, through Ricola's observations, that Elfgiva is suffering in her marriage and that she is "too proud to let it out." This understanding, combined with gratitude and the influence of Bishop Mellitus's sermon about reconciliation, leads him to participate in Ricola's scheme to reunite the couple.</p>
+
+<p>When the plan fails, Elfgiva's sense of betrayal is profound. The slaves she had saved and trusted appeared to have deceived her, and she orders them sold into foreign slavery – a far harsher punishment than their original service at Lundenwic.</p>
+
+<h3 id='cerdic'>Cerdic</h3>
+
+<p>As Cerdic's slave, Offa works hard to please his master, understanding that his fate depends on staying in the merchant's good graces. He observes Cerdic's trading activities and the source of his wealth, including the slave trade. When Cerdic looks at Elfgiva during the feast with desire, Offa silently prays for her to look back, hoping for the reconciliation his wife has planned.</p>
+
+<p>The relationship is typical of master and slave – Offa is useful property, industrious and clever, but ultimately disposable. When Offa's involvement in the failed scheme is discovered, Cerdic's response is not shown, but the couple's fate is sealed by Elfgiva's judgment.</p>
+
+<h3 id='bishop-mellitus'>Bishop Mellitus</h3>
+
+<p>Offa's encounter with <a href="https://en.wikipedia.org/wiki/Mellitus" target="_blank" rel="noopener noreferrer">Bishop Mellitus</a> is spiritually transformative. Initially wary of the bishop, suspecting him of seeking the same treasure Offa hunts, he later becomes one of the most receptive listeners to the Christian message.</p>
+
+<p>The bishop's sermon moves Offa profoundly, awakening in him a sense of hope and joy he has never experienced. The idea that fate might be "reassuring, happy" rather than grim transforms his worldview. Mellitus's message about forgiveness and reconciliation also directly influences Offa's decision to help Ricola's scheme to reunite Cerdic and Elfgiva.</p>
+
+<p>This encounter represents Offa's connection to something larger than survival or treasure-hunting – a spiritual dimension that elevates his character beyond the merely practical.</p>
+
+<h2 id='historical-context'>Historical Context</h2>
+
+<p>Offa lives in the early years of the 7th century, during the conversion of Anglo-Saxon England to Christianity. In 604, Bishop Mellitus arrives from Canterbury as part of Pope Gregory's mission to convert the English, beginning the construction of St. Paul's Cathedral in the ruins of Roman Londinium.</p>
+
+<p>Offa's mixed heritage reflects the complex population of post-Roman Britain. His family descended from small-time Roman merchants who served in the militia after the legions departed. Over four generations, they fell from urban respectability to forest dwelling to integration with Saxon village life. This trajectory mirrors the broader collapse of Roman Britain and the gradual Saxon settlement.</p>
+
+<p>The trading post of Lundenwic represents the re-emergence of commercial activity in the London area after the abandonment of the Roman city. While Londinium itself lies in ruins, this new settlement west of the city walls becomes a hub for trade with continental Europe, particularly the Rhine regions, Frisia, and Scandinavia.</p>
+
+<p>The slave trade that enriches Cerdic reflects historical reality. England became known throughout medieval Europe as a source of slaves, particularly fair-haired captives who were exported to continental markets. The chains in Cerdic's storehouse and the six northern captives represent this lucrative commerce.</p>
+
+<p>Offa's status as a poor freeman illustrates the gradual stratification of Saxon society. He owns only a quarter-yardland, requiring him to work for others to survive. This vulnerability makes him susceptible to the village elder's power and, ultimately, to enslavement.</p>
+
+<h2 id='themes-and-significance'>Themes and Significance</h2>
+
+<h3 id='cultural-transition-and-memory'>Cultural Transition and Memory</h3>
+
+<p>Offa embodies the bridge between Roman Britain and Anglo-Saxon England. His knowledge of Londinium, passed down through four generations, represents cultural memory persisting through the collapse of urban civilization. While the Saxons fear and avoid the ruined city, Offa carries ancestral understanding that makes him curious rather than superstitious.</p>
+
+<p>His brown hair among fair-haired Saxons, his quickness of thought, and his nickname "Duck" all mark him as different – a reminder that Saxon England emerged from a mixing of peoples and cultures, not a simple replacement.</p>
+
+<h3 id='spiritual-awakening'>Spiritual Awakening</h3>
+
+<p>Offa's conversion to Christianity illustrates the missionary strategy of the early Church in England. Bishop Mellitus presents Christ in terms Anglo-Saxons can understand – as a hero like Frey, a winter-born god who defeats death. This cultural translation allows Offa to experience Christian concepts of redemption and resurrection as joyful revelations rather than foreign impositions.</p>
+
+<p>His profound response to the sermon – trembling with "ineffable joy" – suggests that Christianity offered emotional and spiritual resources that paganism could not provide. The harsh, fatalistic <i>Wyrd</i> gives way to hope and the possibility of divine grace.</p>
+
+<h3 id='love-and-consequences'>Love and Consequences</h3>
+
+<p>Offa's passionate defense of Ricola's honor sets his story in motion, illustrating how love can drive people to acts that society deems criminal or irrational. His attack on the village elder shows the tension between personal honor and social hierarchy. In a stratified society, protecting one's wife from a superior becomes a capital crime.</p>
+
+<p>The failed reconciliation scheme shows good intentions producing catastrophic results. Inspired by Christian ideals of forgiveness, Offa and Ricola try to heal their master and mistress's marriage. Instead, they lose their relatively secure position and face exile into foreign slavery. Their escape to Thorney leaves them free but isolated, suggesting that freedom comes at the cost of community.</p>
+
+<h3 id='resilience-and-adaptation'>Resilience and Adaptation</h3>
+
+<p>Throughout his ordeal – from imminent execution to slavery to exile – Offa demonstrates remarkable adaptability. He and Ricola "recover like puppies," repeatedly bouncing back from disaster. His resourcefulness in searching for treasure, learning about trade, and ultimately building a shelter in the wilderness shows human resilience in the face of systematic oppression and misfortune.</p>
+
+<p>The story ends with them alone but free, suggesting that in the fluid world of early 7th-century England, even the most powerless could remake their lives through courage and mutual support.</p>
+
+<h3 id='the-lost-city'>The Lost City</h3>
+
+<p>Offa's fascination with Londinium represents the novel's broader theme of London's cyclical death and rebirth. The ruined city that his ancestors abandoned now draws him back, holding both the promise of treasure and the site of spiritual awakening. His descendant Julius coined Roman money there; he seeks its buried gold. This connection between past and present, collapse and renewal, runs throughout the novel's treatment of London's long history.</p>
+
+<h2 id='key-quotes-about-offa'>Key Quotes About Offa</h2>
+
+<blockquote class='character-quote'>
+<div class='quote-text'>"For the young man, Offa, there was more sympathy, even though his own sentence was assured. No one could deny he had shown spirit."</div>
+<div class='quote-attribution'>Context: The villagers' judgment of Offa after he attacked the elder for attempting to rape his wife.</div>
+</blockquote>
+
+<blockquote class='character-quote'>
+<div class='quote-text'>"Though his name was Offa, the other villagers usually referred to him as Duck."</div>
+<div class='quote-attribution'>Context: Establishing Offa's nickname, which marks his difference from the Saxon villagers.</div>
+</blockquote>
+
+<blockquote class='character-quote'>
+<div class='quote-text'>"We won't be slaves for long. I'll think of something."</div>
+<div class='quote-attribution'>Context: Offa's optimistic reassurance to Ricola after their enslavement, showing his resilience and hopefulness.</div>
+</blockquote>
+
+<blockquote class='character-quote'>
+<div class='quote-text'>"For the first time in his life Offa had a sense that fate itself, the grim, unknowable Wyrd, might instead be something reassuring, happy. It produced in him a feeling of ineffable joy that made him tremble."</div>
+<div class='quote-attribution'>Context: Offa's response to Bishop Mellitus's Christmas sermon, marking his spiritual awakening to Christianity.</div>
+</blockquote>
+
+<h2 id='key-quotes-said-by-offa'>Key Quotes Said by Offa</h2>
+
+<blockquote class='character-quote'>
+<div class='quote-text'>"My grandfather always said that there are two hills in the great city. And on the western hill, there's buried gold. A huge treasure."</div>
+<div class='quote-attribution'>Context: Offa sharing his ancestral knowledge of Londinium with his father, explaining his fascination with the ruined city.</div>
+</blockquote>
+
+<blockquote class='character-quote'>
+<div class='quote-text'>"Now we can let our hair grow."</div>
+<div class='quote-attribution'>Context: Offa's cheerful remark to Ricola after their escape, as long hair was the mark of freedom while short hair marked them as slaves.</div>
+</blockquote>
+
+        </div>
+    </div>
+</body>
+</html>

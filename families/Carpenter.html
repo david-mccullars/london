@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="/london/">
+    <title>Carpenter Family Tree</title>
+    <link rel="stylesheet" href="css/london.css">
+    <link rel="stylesheet" href="css/family-tree.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.33.1/cytoscape.min.js"></script>
+</head>
+<body class="family-tree-page" data-family="carpenter">
+    
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="families/Barnikel.html">Barnikel</a></li>
+        <li><a href="families/Bull.html">Bull</a></li>
+        <li><a href="families/Carpenter.html" class="current">Carpenter</a></li>
+        <li><a href="families/Dogget.html">Dogget</a></li>
+        <li><a href="families/Ducket.html">Ducket</a></li>
+        <li><a href="families/Fleming.html">Fleming</a></li>
+        <li><a href="families/Meredith.html">Meredith</a></li>
+        <li><a href="families/Penny.html">Penny</a></li>
+        <li><a href="families/Silversleeves.html">Silversleeves</a></li>
+    </ul>
+    <select onchange="if(this.value) window.location.href=this.value">
+        <option value="">Choose a family...</option>
+        <option value="index.html">Home</option>
+        <option value="families/Barnikel.html">Barnikel</option>
+        <option value="families/Bull.html">Bull</option>
+        <option value="families/Carpenter.html" selected>Carpenter</option>
+        <option value="families/Dogget.html">Dogget</option>
+        <option value="families/Ducket.html">Ducket</option>
+        <option value="families/Fleming.html">Fleming</option>
+        <option value="families/Meredith.html">Meredith</option>
+        <option value="families/Penny.html">Penny</option>
+        <option value="families/Silversleeves.html">Silversleeves</option>
+    </select>
+</nav>
+
+
+    <div class="container">
+        <header>
+            <h1>The Carpenter Family Line</h1>
+            <p class="subtitle">Anglo-Saxon Craftsmen and Puritans</p>
+        </header>
+
+        <div id="cy"></div>
+    </div>
+
+    <script>
+        // Embed the family tree data
+        const familyData = {"nodes":[{"id":"Osric-1062","name":"Osric","year":"1062","chapter":"conqueror","role":null,"portrait":"images/characters/sm/Osric-1062.png","page":"characters/Osric-1062.html"},{"id":"Dorkes-1062","name":"Dorkes","year":"1062","chapter":"conqueror","role":null,"portrait":"images/characters/sm/Dorkes-1062.png","page":"characters/Dorkes-1062.html"},{"id":"Amy-Fleming-1365","name":"Amy Fleming","year":"1365","chapter":"bridge","role":null,"portrait":"images/characters/sm/Amy-Fleming-1365.png","page":"characters/Amy-Fleming-1365.html"},{"id":"Ben-Carpenter-1362","name":"Ben Carpenter","year":"1362","chapter":"bridge","role":null,"portrait":"images/characters/sm/Ben-Carpenter-1362.png","page":"characters/Ben-Carpenter-1362.html"},{"id":"Matthew-Carpenter-1503","name":"Matthew Carpenter","year":"1503","chapter":"hampton","role":null,"portrait":"images/characters/sm/Matthew-Carpenter-1503.png","page":"characters/Matthew-Carpenter-1503.html"},{"id":"Cuthbert-Carpenter-1577","name":"Cuthbert Carpenter","year":"1577","chapter":"globe","role":null,"portrait":"images/characters/sm/Cuthbert-Carpenter-1577.png","page":"characters/Cuthbert-Carpenter-1577.html"},{"id":"Martha-Carpenter-1584","name":"Martha Carpenter","year":"1584","chapter":"gods_fire","role":null,"portrait":"images/characters/sm/Martha-Carpenter-1584.png","page":"characters/Martha-Carpenter-1584.html"},{"id":"Gideon-Carpenter-1606","name":"Gideon Carpenter","year":"1606","chapter":"gods_fire","role":null,"portrait":"images/characters/sm/Gideon-Carpenter-1606.png","page":"characters/Gideon-Carpenter-1606.html"},{"id":"O-Be-Joyful-Carpenter-1636","name":"O Be Joyful Carpenter","year":"1636","chapter":"st_pauls","role":null,"portrait":"images/characters/sm/O-Be-Joyful-Carpenter-1636.png","page":"characters/O-Be-Joyful-Carpenter-1636.html"},{"id":"Martha-Carpenter-1697","name":"Martha Carpenter","year":"1697","chapter":"gin_lane","role":null,"portrait":"images/characters/sm/Martha-Carpenter-1697.png","page":"characters/Martha-Carpenter-1697.html"},{"id":"Gideon-Carpenter-1699","name":"Gideon Carpenter","year":"1699","chapter":"gin_lane","role":null,"portrait":"images/characters/sm/Gideon-Carpenter-1699.png","page":"characters/Gideon-Carpenter-1699.html"},{"id":"Zachary-Carpenter-1771","name":"Zachary Carpenter","year":"1771","chapter":"lavender","role":null,"portrait":"images/characters/sm/Zachary-Carpenter-1771.png","page":"characters/Zachary-Carpenter-1771.html"},{"id":"Carpenter-the-Fabian-1885","name":"Carpenter the Fabian","year":"1885","chapter":"suffragette","role":null,"portrait":"images/characters/sm/Carpenter-the-Fabian-1885.png","page":"characters/Carpenter-the-Fabian-1885.html"}],"links":[{"source":"Osric-1062","target":"Dorkes-1062","type":"marriage"},{"source":"Amy-Fleming-1365","target":"Ben-Carpenter-1362","type":"marriage"},{"source":"Martha-Carpenter-1584","target":"Cuthbert-Carpenter-1577","type":"sibling"},{"source":"Martha-Carpenter-1697","target":"Gideon-Carpenter-1699","type":"sibling"},{"source":"Cuthbert-Carpenter-1577","target":"Gideon-Carpenter-1606","type":"child"},{"source":"Gideon-Carpenter-1606","target":"O-Be-Joyful-Carpenter-1636","type":"child"},{"source":"Osric-1062","target":"Ben-Carpenter-1362","type":"descent","label":"~10 generations (300 years)","gap":null},{"source":"Dorkes-1062","target":"Ben-Carpenter-1362","type":"descent","label":"~10 generations (300 years)","gap":null},{"source":"Ben-Carpenter-1362","target":"Matthew-Carpenter-1503","type":"descent","label":"~5 generations (141 years)","gap":null},{"source":"Matthew-Carpenter-1503","target":"Cuthbert-Carpenter-1577","type":"descent","label":"~2 generations (74 years)","gap":null},{"source":"Matthew-Carpenter-1503","target":"Martha-Carpenter-1584","type":"descent","label":"~2 generations (81 years)","gap":null},{"source":"O-Be-Joyful-Carpenter-1636","target":"Martha-Carpenter-1697","type":"descent","label":"~2 generations (41 years)","gap":null},{"source":"O-Be-Joyful-Carpenter-1636","target":"Gideon-Carpenter-1699","type":"descent","label":"~2 generations (43 years)","gap":null},{"source":"Gideon-Carpenter-1699","target":"Zachary-Carpenter-1771","type":"descent","label":"~3 generations (92 years)","gap":null},{"source":"Zachary-Carpenter-1771","target":"Carpenter-the-Fabian-1885","type":"descent","label":"~4 generations (114 years)","gap":null}],"chapters":[{"id":"conqueror","title":"THE CONQUEROR","subtitle":"(1066)"},{"id":"bridge","title":"LONDON BRIDGE","subtitle":"(1382)"},{"id":"hampton","title":"HAMPTON COURT","subtitle":"(1540s)"},{"id":"globe","title":"THE GLOBE","subtitle":"(1599)"},{"id":"gods_fire","title":"GOD'S FIRE","subtitle":"(1630s)"},{"id":"st_pauls","title":"ST PAULS","subtitle":"(1666)"},{"id":"gin_lane","title":"GIN LANE","subtitle":"(1750s)"},{"id":"lavender","title":"LAVENDER HILL","subtitle":"(1820s)"},{"id":"suffragette","title":"THE SUFFRAGETTE","subtitle":"(1910)"}],"layout":{"couples":[],"singles":{"Martha-Carpenter-1697":-300,"Gideon-Carpenter-1699":-300}}};
+    </script>
+    <script src="js/family-tree.js"></script>
+</body>
+</html>

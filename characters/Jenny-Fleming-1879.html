@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="/london/">
+    <title>Jenny Fleming - London Characters</title>
+    <link rel="stylesheet" href="css/london.css">
+    <link rel="stylesheet" href="css/character.css">
+</head>
+<body class="character-page" data-family="fleming">
+    
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="families/Barnikel.html">Barnikel</a></li>
+        <li><a href="families/Bull.html">Bull</a></li>
+        <li><a href="families/Carpenter.html">Carpenter</a></li>
+        <li><a href="families/Dogget.html">Dogget</a></li>
+        <li><a href="families/Ducket.html">Ducket</a></li>
+        <li><a href="families/Fleming.html" class="current">Fleming</a></li>
+        <li><a href="families/Meredith.html">Meredith</a></li>
+        <li><a href="families/Penny.html">Penny</a></li>
+        <li><a href="families/Silversleeves.html">Silversleeves</a></li>
+    </ul>
+    <select onchange="if(this.value) window.location.href=this.value">
+        <option value="">Choose a family...</option>
+        <option value="index.html">Home</option>
+        <option value="families/Barnikel.html">Barnikel</option>
+        <option value="families/Bull.html">Bull</option>
+        <option value="families/Carpenter.html">Carpenter</option>
+        <option value="families/Dogget.html">Dogget</option>
+        <option value="families/Ducket.html">Ducket</option>
+        <option value="families/Fleming.html" selected>Fleming</option>
+        <option value="families/Meredith.html">Meredith</option>
+        <option value="families/Penny.html">Penny</option>
+        <option value="families/Silversleeves.html">Silversleeves</option>
+    </select>
+</nav>
+
+
+    <div class="character-container">
+        <div class="character-header">
+            <h1>Jenny Fleming</h1>
+            <div class="birth-year">c. 1879</div>
+        </div>
+
+        <img src="images/characters/Jenny-Fleming-1879.png" alt="Jenny Fleming" class="character-portrait-large">
+
+        <div class="character-body">
+<div class="toc-container">
+  <div class="toc-header">
+    <span class="toc-title">Contents</span>
+    <button class="toc-toggle" onclick="toggleTOC()"><<</button>
+  </div>
+  <div class="toc-content">
+        <div class='toc-section'><a href='characters/Jenny-Fleming-1879.html#overview'>Overview</a></div>
+        <div class='toc-section'><a href='characters/Jenny-Fleming-1879.html#physical-description'>Physical Description</a></div>
+        <div class='toc-section'><a href='characters/Jenny-Fleming-1879.html#character-and-personality'>Character and Personality</a></div>
+        <div class='toc-section'><a href='characters/Jenny-Fleming-1879.html#life-and-events'>Life and Events</a></div>
+        <div class='toc-subsection'><a href='characters/Jenny-Fleming-1879.html#1890-entering-service'>1890: Entering Service</a></div>
+        <div class='toc-subsection'><a href='characters/Jenny-Fleming-1879.html#1890-1908-rise-in-service'>1890-1908: Rise in Service</a></div>
+        <div class='toc-subsection'><a href='characters/Jenny-Fleming-1879.html#1908-meeting-percy'>1908: Meeting Percy</a></div>
+        <div class='toc-subsection'><a href='characters/Jenny-Fleming-1879.html#1909-1910-the-courtship'>1909-1910: The Courtship</a></div>
+        <div class='toc-subsection'><a href='characters/Jenny-Fleming-1879.html#1910-crisis-and-decision'>1910: Crisis and Decision</a></div>
+        <div class='toc-subsection'><a href='characters/Jenny-Fleming-1879.html#1911-1912-resolution'>1911-1912: Resolution</a></div>
+        <div class='toc-subsection'><a href='characters/Jenny-Fleming-1879.html#1913-the-miracle'>1913: The Miracle</a></div>
+        <div class='toc-subsection'><a href='characters/Jenny-Fleming-1879.html#1940-the-blitz'>1940: The Blitz</a></div>
+        <div class='toc-section'><a href='characters/Jenny-Fleming-1879.html#relationships'>Relationships</a></div>
+        <div class='toc-subsection'><a href='characters/Jenny-Fleming-1879.html#lucy-dogget'>Lucy Dogget</a></div>
+        <div class='toc-subsection'><a href='characters/Jenny-Fleming-1879.html#esther-silversleeves'>Esther Silversleeves</a></div>
+        <div class='toc-subsection'><a href='characters/Jenny-Fleming-1879.html#percy-fleming'>Percy Fleming</a></div>
+        <div class='toc-subsection'><a href='characters/Jenny-Fleming-1879.html#her-brother-and-father'>Her Brother and Father</a></div>
+        <div class='toc-subsection'><a href='characters/Jenny-Fleming-1879.html#maisie-fleming'>Maisie Fleming</a></div>
+        <div class='toc-section'><a href='characters/Jenny-Fleming-1879.html#historical-context'>Historical Context</a></div>
+        <div class='toc-section'><a href='characters/Jenny-Fleming-1879.html#themes-and-significance'>Themes and Significance</a></div>
+        <div class='toc-section'><a href='characters/Jenny-Fleming-1879.html#key-quotes-about-jenny-fleming'>Key Quotes About Jenny Fleming</a></div>
+        <div class='toc-section'><a href='characters/Jenny-Fleming-1879.html#key-quotes-said-by-jenny-fleming'>Key Quotes Said by Jenny Fleming</a></div>
+  </div>
+</div>
+<script>
+  function toggleTOC() {
+    const container = document.querySelector('.toc-container');
+    const content = document.querySelector('.toc-content');
+    const title = document.querySelector('.toc-title');
+    const toggle = document.querySelector('.toc-toggle');
+
+    if (container.classList.contains('collapsed')) {
+      container.classList.remove('collapsed');
+      content.style.display = 'block';
+      title.style.display = 'inline';
+      toggle.textContent = '<<';
+    } else {
+      container.classList.add('collapsed');
+      content.style.display = 'none';
+      title.style.display = 'none';
+      toggle.textContent = '☰';
+    }
+  }
+</script>
+
+
+<div class='basic-info-box'>
+<div class='info-row'>
+<div class='info-label'>Born</div>
+<div class='info-content'>
+1879</div>
+</div>
+<div class='info-row'>
+<div class='info-label'>Died</div>
+<div class='info-content'>
+Unknown</div>
+</div>
+<div class='info-row'>
+<div class='info-label'>Occupation</div>
+<div class='info-content'>
+Domestic servant, later housewife</div>
+</div>
+<div class='info-row'>
+<div class='info-label'>Social Status</div>
+<div class='info-content'>
+Working class (East End), later lower middle class</div>
+</div>
+<div class='info-row'>
+<div class='info-label'>Father</div>
+<div class='info-content'>
+<a href="characters/William-Dogget-1842.html">William Dogget</a></div>
+</div>
+<div class='info-row'>
+<div class='info-label'>Brother</div>
+<div class='info-content'>
+Tom Dogget</div>
+</div>
+<div class='info-row'>
+<div class='info-label'>Spouse</div>
+<div class='info-content'>
+<a href="characters/Percy-Fleming-1875.html">Percy Fleming</a></div>
+</div>
+<div class='info-row'>
+<div class='info-label'>Child</div>
+<div class='info-content'>
+Son (born 1913), daughter</div>
+</div>
+<div class='info-row'>
+<div class='info-label'>Chapters</div>
+<div class='info-content'>
+The Cutty Sark<br>The Suffragette<br>The Blitz</div>
+</div>
+</div>
+<h2 id='overview'>Overview</h2>
+
+<p>Jenny Fleming (born Jenny Dogget, later briefly known as Jenny Ducket) is the great-granddaughter of <a href="characters/Silas-Dogget-1792.html">Silas Dogget</a> through his illegitimate family line. Rescued from poverty in the East End by her grandmother Lucy, she enters service with the <a href="characters/Arnold-Silversleeves-1814.html">Silversleeves</a> family and rises from scullery maid to lady's maid. Her cautious romance with tailor Percy Fleming is complicated by class differences, family obligations, and a mistaken medical diagnosis, but she ultimately finds happiness in marriage and motherhood, representing the possibility of social mobility through respectability and service.</p>
+
+<h2 id='physical-description'>Physical Description</h2>
+
+<p>Jenny is described as "pale and thin" with a somewhat modest appearance. She is clean and well-groomed due to her position in service, often smelling of lavender water. She has brown eyes and a quiet, reserved demeanor that initially makes her seem as though "she had suffered a bit."</p>
+
+<h2 id='character-and-personality'>Character and Personality</h2>
+
+<p>Jenny is fundamentally cautious and self-protective, shaped by her harsh origins in the East End. She is deeply conscious of her precarious social position and fiercely determined never to return to the poverty she escaped. Her grandmother Lucy's last words – "Don't come back, Jenny. Don't you ever, ever go back to where you've been" – become her guiding principle.</p>
+
+<p>She is respectful, hardworking, and acutely aware of social hierarchies, always careful "not to get above her station." Though she develops genuine affection for Percy Fleming, she carefully guards her emotional vulnerability, controlling the pace of their courtship and meeting him only in neutral territory. She values respectability above almost everything else: "Respectability meant clean sheets and clothes; a man with a steady job, food on the table. Respectability was morality, and morality was order. Respectability was survival."</p>
+
+<p>Despite her caution, Jenny possesses quiet strength and loyalty. She dutifully visits her father and brother in the East End even though their world repulses her. She is capable of decisive cruelty when necessary, as when she deliberately wounds Percy to protect him from what she believes would be a childless marriage.</p>
+
+<h2 id='life-and-events'>Life and Events</h2>
+
+<h3 id='1890-entering-service'>1890: Entering Service</h3>
+
+<p>At approximately ten years old, Jenny is brought to the Silversleeves household in Hampstead by her grandmother Lucy Dogget. To protect both Jenny and the Silversleeves family from the dark secrets of Silas Dogget's past, Lucy claims to have found the position through an agency. Esther Silversleeves insists that Jenny change her surname from Dogget to Ducket to distance her from any family connection.</p>
+
+<p>Jenny begins as the lowest housemaid, doing the hardest work: "carrying the coal scuttles upstairs, cleaning out the grates, polishing the brass and scrubbing floors." She works exhausting hours but considers her new life "heaven" compared to the East End: "Clean clothes, clean sheets, enough to eat."</p>
+
+<h3 id='1890-1908-rise-in-service'>1890-1908: Rise in Service</h3>
+
+<p>Over nearly twenty years, Jenny gradually rises through the household hierarchy. She progresses from scullery maid to housemaid and finally to lady's maid to <a href="characters/Esther-Dogget-1822.html">Esther Silversleeves</a>. The relationship between mistress and servant deepens into genuine affection. Mrs. Silversleeves gives her presents – scarves, gloves, coats – and increasingly relies on Jenny's companionship, having her read newspapers and talk with her in the evenings.</p>
+
+<p>Jenny maintains contact with her father and brother in the East End, visiting twice yearly but never mentioning these visits to Mrs. Silversleeves, who becomes "distant" at any reference to Jenny's origins.</p>
+
+<p>She develops "a few friends" and has occasional male admirers – "a young coachman, a greengrocer and a tramdriver" – but quietly discourages all advances. She has private reasons for avoiding marriage and feels increasingly that Mrs. Silversleeves depends on her too much for her to leave.</p>
+
+<h3 id='1908-meeting-percy'>1908: Meeting Percy</h3>
+
+<p>On a Saturday in autumn 1908, while on an errand for Mrs. Silversleeves at Tower Bridge, Jenny encounters the Fleming brothers – Herbert and <a href="characters/Percy-Fleming-1875.html">Percy Fleming</a>. Herbert's theatrical announcement that Percy needs a wife and his insistence that she witness Percy's promise to move to Crystal Palace creates an awkward but memorable first meeting.</p>
+
+<p>Something about Percy appeals to her – "his concave face, a little sad perhaps but determined, which made him look reliable." She cautiously allows a courtship to develop, but maintains strict control, meeting Percy only once a week in neutral central London locations, refusing to let him visit Hampstead, and periodically declining to see him for weeks at a time. "Behind her studiously casual friendship, there lay a fear."</p>
+
+<h3 id='1909-1910-the-courtship'>1909-1910: The Courtship</h3>
+
+<p>The relationship slowly deepens. They visit the zoo, walk in parks, and attend the Palladium music hall together – an evening that represents a breakthrough, after which Jenny allows Percy to kiss her cheek and agrees to visit his family at Crystal Palace.</p>
+
+<p>The visit to Percy's brother Herbert and sister-in-law Maisie proves uncomfortable. Maisie, protective of the family's social standing, probes Jenny's background and declares: "We've never had anyone in service in our family, of course. Or Herbert's." When Maisie directly states "You're in service, aren't you?" Jenny coolly replies, "That's right... I don't suppose you ever will, either."</p>
+
+<p>Despite this awkwardness, Percy proposes in Crystal Palace park. Jenny, overwhelmed by doubts, asks for time to decide.</p>
+
+<h3 id='1910-crisis-and-decision'>1910: Crisis and Decision</h3>
+
+<p>Jenny's indecision stems from multiple concerns. She worries that Maisie will talk Percy out of the engagement. She feels obligated to her brother's children, thinking that as an unmarried woman with savings, she could help them if tragedy struck. Most of all, she fears the vulnerability of marriage: after seeing a destitute widow at her brother's home, she reflects on how easily a working-class woman can fall into poverty if her husband dies.</p>
+
+<p>When Mrs. Silversleeves notices Jenny's distress, the old lady insists she see a doctor. Jenny experiences mysterious stomach pains and is sent to the eminent specialist Mr. Tyrrell-Ford in Harley Street. After a cursory examination, he casually informs her: "You know you can't have children, I suppose." When Jenny protests that she didn't know, he dismisses her: "It's the way you're made."</p>
+
+<p>Knowing that Percy wants a family, Jenny decides she must reject him completely. She meets him at Tower Bridge and cruelly tells him: "I don't want to marry you, Percy. I never did and I never shall." She walks away while the bridge is opening, preventing Percy from following. She ignores his subsequent letters.</p>
+
+<h3 id='1911-1912-resolution'>1911-1912: Resolution</h3>
+
+<p>A year later, Percy writes again, mentioning illness. Mrs. Silversleeves, suspecting something is wrong, visits Percy at his workplace and learns of his condition. When Percy next contacts Jenny, she agrees to meet him.</p>
+
+<p>Percy reveals that he has tuberculosis concerns and is going to France for five months to recover. He then mentions, apparently casually, that medical tests revealed he cannot father children. This revelation transforms everything for Jenny.</p>
+
+<p>After Percy's return from France in 1912, they marry. The marriage certificate lists her name as Dogget, not Ducket, surprising Percy. The wedding is attended by Herbert, Maisie (who "was not at all pleased"), Mrs. Silversleeves, and her son Matthew Silversleeves, who gives Jenny away. At Mrs. Silversleeves's insistence, Jenny does not invite her father or brother.</p>
+
+<p>The wedding present from Mrs. Silversleeves is a check for six hundred pounds – a fortune that allows the couple to buy "a little house up in Crystal Palace."</p>
+
+<h3 id='1913-the-miracle'>1913: The Miracle</h3>
+
+<p>In spring 1913, Jenny discovers she is pregnant. When she protests to the doctor that it's impossible, he assures her it is not. Percy, who had lied about his own infertility to give Jenny peace of mind, is astonished. Their son is born in summer 1913.</p>
+
+<p>The eminent Mr. Tyrrell-Ford of Harley Street "had been talking through his hat."</p>
+
+<h3 id='1940-the-blitz'>1940: The Blitz</h3>
+
+<p>By 1940, Jenny is sixty-one and living with Percy at Crystal Palace. They have a son (in the army) and a daughter (married and living in Kent). Percy and his brother Herbert volunteer with the Auxiliary Fire Service, working nights at a substation.</p>
+
+<p>During the Blitz, Jenny and Maisie cope with the bombing together. They go to see <em>Gone with the Wind</em> to take their minds off the danger and stand together watching the fires over London. Jenny appears to have become more comfortable with Maisie over the years, and the two women support each other through the crisis.</p>
+
+<p>Tragically, Maisie is killed by shrapnel from anti-aircraft guns while standing on the ridge at Crystal Palace, watching aerial combat overhead.</p>
+
+<h2 id='relationships'>Relationships</h2>
+
+<h3 id='lucy-dogget'>Lucy Dogget</h3>
+
+<p>Jenny's grandmother Lucy is her rescuer and moral guide. Lucy endures decades of grinding poverty after keeping her illegitimate son (Jenny's father) rather than giving him up to Silas Dogget. She works at menial jobs, making matchboxes in her old age, to help support Jenny's wastrel father and his family.</p>
+
+<p>Lucy finds Jenny a place with the Silversleeves family through an elaborate deception, tracking down Silas's daughter Esther and appealing to her sense of guilt and duty. Her final words to Jenny – "Don't come back... Don't you ever, ever go back to where you've been" – become Jenny's defining principle, shaping her lifelong drive for respectability and security.</p>
+
+<h3 id='esther-silversleeves'>Esther Silversleeves</h3>
+
+<p>Mrs. Silversleeves begins as Jenny's employer but becomes something closer to family. Esther takes Jenny in partly from guilt over her father Silas Dogget's treatment of Lucy, and partly because Esther herself has been haunted by the dark secrets of his past.</p>
+
+<p>Over twenty years, genuine affection develops. Esther gives Jenny presents, confides in her, and relies on her companionship. When Jenny's romance falters, Esther intervenes, secretly visiting Percy to learn the truth about his medical condition. She insists that Jenny accept no obligation to stay in service: "Child, you owe me nothing."</p>
+
+<p>Esther's wedding present of six hundred pounds – an enormous sum – enables Jenny and Percy to establish themselves in a house of their own, a remarkable act of generosity that suggests Esther views Jenny as more than just a servant.</p>
+
+<h3 id='percy-fleming'>Percy Fleming</h3>
+
+<p>Jenny is drawn to Percy's quiet reliability but fears the vulnerability that marriage represents. She controls their courtship carefully, keeping Percy at a distance for months and meeting him only in neutral locations. She refuses to let him into her territory at Hampstead, understanding that would "imply too much commitment."</p>
+
+<p>When she believes she cannot have children, she makes the painful decision to reject Percy completely, walking away from him cruelly to spare him a childless marriage. Her willingness to sacrifice her own happiness for his sake reveals the depth of her feelings.</p>
+
+<p>Percy's revelation that he also cannot have children (which he later admits was a lie told to free her from worry) removes Jenny's last obstacle. Their marriage proves happy and fulfilling, producing two children against all expectations.</p>
+
+<h3 id='her-brother-and-father'>Her Brother and Father</h3>
+
+<p>Jenny's relationship with her East End family is dutiful but uncomfortable. She visits twice yearly, bringing money and gifts, but cannot hide her repugnance at "the musty smell of long-boiled cabbage," the shared privy, and "the general meanness of everything and, worst of all, the acceptance of these things."</p>
+
+<p>Her brother harbors resentment: "It's all right for some," he thinks when she visits. He asks her to promise to help his children if anything happens to him, and this obligation weighs on Jenny as another reason to remain unmarried and financially independent.</p>
+
+<p>Yet she never completely abandons them, maintaining contact even though Mrs. Silversleeves forbids any mention of her East End connections.</p>
+
+<h3 id='maisie-fleming'>Maisie Fleming</h3>
+
+<p>Percy's sister-in-law Maisie represents the petty snobbery of the respectable lower middle class. When Jenny visits for lunch, Maisie probes her background, trying to determine if she is "safe" for the Fleming family name. The confrontation – "You're in service, aren't you?" – establishes permanent tension between the two women.</p>
+
+<p>However, by 1940, Jenny and Maisie have "learned to get on together," spending time together during the Blitz, suggesting that shared experience and family ties eventually overcame their initial mutual hostility.</p>
+
+<h2 id='historical-context'>Historical Context</h2>
+
+<p>Jenny's life spans one of the most dramatic periods of social change in British history. Born into the poverty-stricken East End of the 1870s-80s, she witnesses and participates in several significant transformations:</p>
+
+<p><strong>The East End:</strong> Jenny's childhood world is the overcrowded, disease-ridden East End following the great Jewish immigration of the 1880s. Her father is a casual dock laborer, often unemployed or drunk. Her grandmother works exhausting hours making matchboxes at home for starvation wages. This is the world of Jack the Ripper, of the Bryant and May match girls' strike, of Eleanor Marx organizing gasworkers. It is a world from which Jenny is desperate to escape.</p>
+
+<p><strong>Domestic Service:</strong> Jenny's route to security – entering domestic service – was the path taken by hundreds of thousands of working-class women in Victorian and Edwardian England. Service offered regular meals, clean lodgings, and a chance to rise through household ranks. For women like Jenny, a position in a respectable household represented salvation. By 1908, when she meets Percy, she has risen to lady's maid, a position of trust and relative privilege.</p>
+
+<p><strong>Class and Marriage:</strong> Jenny's cautious approach to marriage reflects working-class women's realistic fear of destitution. Without effective welfare provisions, a widow with children faced genuine starvation. Working-class men could be "sacked for just looking at a foreman," as Jenny's father was. Women married "down" at their peril. Jenny's desire to remain single and financially independent, while unusual, was not irrational.</p>
+
+<p><strong>Social Mobility:</strong> Jenny and Percy's marriage represents successful social mobility. Percy is a skilled independent craftsman, a trouser-maker serving the West End trade. Their home at Crystal Palace, with its suburban villas and clean air, represents the aspirational world of the respectable working and lower middle classes. The six hundred pounds from Mrs. Silversleeves enables them to buy their house outright, securing their position.</p>
+
+<p><strong>Medical Authority:</strong> Jenny's experience with Mr. Tyrrell-Ford reveals the casual arrogance of Edwardian medical specialists, particularly toward working-class women patients. Tyrrell-Ford's cursory examination, his dismissive attitude, and his catastrophically wrong diagnosis reflect contemporary medical attitudes that saw poor women as beneath detailed explanation.</p>
+
+<p><strong>The Blitz:</strong> By 1940, Jenny and Percy's world at Crystal Palace has become a vantage point from which to watch London burning. Like thousands of their generation, they volunteer for civil defense, with Percy and Herbert working at the fire substation. The Blitz demonstrates how completely the class barriers Jenny once feared have been dissolved by shared national crisis.</p>
+
+<h2 id='themes-and-significance'>Themes and Significance</h2>
+
+<p><strong>Escape and Respectability:</strong> Jenny embodies the Victorian and Edwardian working-class drive for respectability as a means of survival. Her grandmother Lucy's successful effort to place her in service represents a generational achievement – breaking the cycle of poverty through propriety, hard work, and strategic concealment of origins. Jenny's terror of returning to the East End drives all her major life decisions.</p>
+
+<p><strong>The Weight of the Past:</strong> Jenny lives under a double burden of secrecy. She must never reveal her true surname (Dogget) or her actual relationship to the Silversleeves family, and she must carefully manage her connections to her East End family. This constant need for concealment shapes her cautious, self-protective personality.</p>
+
+<p><strong>Female Vulnerability and Agency:</strong> Jenny's story explores the limited agency of working-class women in making life choices. Marriage offers companionship and love but threatens economic security if the husband dies or loses work. Remaining single in service offers stability but no family. Jenny tries to find a third way – financial independence through savings – but ultimately chooses the risk of marriage once the (false) barrier of childlessness is removed.</p>
+
+<p><strong>Medical Authority and Women:</strong> The casual cruelty of Mr. Tyrrell-Ford's misdiagnosis and his contemptuous treatment of Jenny as a patient too insignificant to deserve proper explanation represents the broader power dynamics between social classes and between male medical authority and female patients. The revelation that his confident diagnosis was completely wrong serves as a quiet indictment of medical arrogance.</p>
+
+<p><strong>Class and Love:</strong> Jenny and Percy's relationship must navigate not only their own feelings but the social barriers erected by families on both sides. Maisie's suspicion of Jenny parallels Mrs. Silversleeves's prohibition on mentioning the East End. Their marriage succeeds not by ignoring these barriers but by achieving enough financial independence to transcend them.</p>
+
+<p><strong>The Silversleeves Legacy:</strong> Jenny's story represents the final redemption of Esther Silversleeves and, indirectly, of Silas Dogget. Esther takes in Jenny partly from guilt over her father's treatment of Lucy and the dark hints of what Silas may have done to Lucy's younger brother. The enormous wedding gift suggests Esther views this as a kind of restitution, using Silas's money to give Jenny the security that Lucy never had.</p>
+
+<p><strong>Generational Progress:</strong> The arc from Lucy making matchboxes in squalor, to Jenny in respectable service, to Jenny's children owning a house and achieving middle-class status represents the genuine social mobility possible in late Victorian and Edwardian England for those who worked hard, maintained respectability, and had crucial moments of good fortune.</p>
+
+<h2 id='key-quotes-about-jenny-fleming'>Key Quotes About Jenny Fleming</h2>
+
+<blockquote class='character-quote'>
+<div class='quote-text'>"She was really quite surprised to see him then, an hour later, standing in the middle of the bridge, trying to look casual and pretending he wasn't half frozen after waiting."</div>
+<div class='quote-attribution'>Narrator, describing Percy waiting for Jenny at Tower Bridge, showing both his devotion and Jenny's cautious testing of his commitment</div>
+</blockquote>
+
+<blockquote class='character-quote'>
+<div class='quote-text'>"Respectable? For someone like Jenny, respectability meant clean sheets and clothes; a man with a steady job, food on the table. Respectability was morality, and morality was order. Respectability was survival."</div>
+<div class='quote-attribution'>Narrator, explaining Jenny's core values</div>
+</blockquote>
+
+<blockquote class='character-quote'>
+<div class='quote-text'>"She smells of lavender water."</div>
+<div class='quote-attribution'>Jenny's sister-in-law, noticing the gulf between Jenny's transformed life and her brother's poverty</div>
+</blockquote>
+
+<h2 id='key-quotes-said-by-jenny-fleming'>Key Quotes Said by Jenny Fleming</h2>
+
+<blockquote class='character-quote'>
+<div class='quote-text'>"I don't want to marry you, Percy. I never did and I never shall. I'm sorry."</div>
+<div class='quote-attribution'>Jenny to Percy, deliberately wounding him to protect him from what she believes would be a childless marriage</div>
+</blockquote>
+
+<blockquote class='character-quote'>
+<div class='quote-text'>"I couldn't leave you, Mrs Silversleeves. I owe you so much."</div>
+<div class='quote-attribution'>Jenny to Esther, expressing her loyalty and sense of obligation</div>
+</blockquote>
+
+<blockquote class='character-quote'>
+<div class='quote-text'>"No. I don't suppose you ever will, either."</div>
+<div class='quote-attribution'>Jenny to Maisie, responding to Maisie's condescending remark about having servants in the family, showing Jenny's quiet steel</div>
+</blockquote>
+
+<blockquote class='character-quote'>
+<div class='quote-text'>"Because he won't be there anyway."</div>
+<div class='quote-attribution'>Jenny to herself, explaining why she's going to Tower Bridge to meet Percy, revealing her protective self-deception when she's about to take an emotional risk</div>
+</blockquote>
+
+        </div>
+    </div>
+</body>
+</html>

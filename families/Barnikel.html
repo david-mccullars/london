@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="/london/">
+    <title>Barnikel Family Tree</title>
+    <link rel="stylesheet" href="css/london.css">
+    <link rel="stylesheet" href="css/family-tree.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.33.1/cytoscape.min.js"></script>
+</head>
+<body class="family-tree-page" data-family="barnikel">
+    
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="families/Barnikel.html" class="current">Barnikel</a></li>
+        <li><a href="families/Bull.html">Bull</a></li>
+        <li><a href="families/Carpenter.html">Carpenter</a></li>
+        <li><a href="families/Dogget.html">Dogget</a></li>
+        <li><a href="families/Ducket.html">Ducket</a></li>
+        <li><a href="families/Fleming.html">Fleming</a></li>
+        <li><a href="families/Meredith.html">Meredith</a></li>
+        <li><a href="families/Penny.html">Penny</a></li>
+        <li><a href="families/Silversleeves.html">Silversleeves</a></li>
+    </ul>
+    <select onchange="if(this.value) window.location.href=this.value">
+        <option value="">Choose a family...</option>
+        <option value="index.html">Home</option>
+        <option value="families/Barnikel.html" selected>Barnikel</option>
+        <option value="families/Bull.html">Bull</option>
+        <option value="families/Carpenter.html">Carpenter</option>
+        <option value="families/Dogget.html">Dogget</option>
+        <option value="families/Ducket.html">Ducket</option>
+        <option value="families/Fleming.html">Fleming</option>
+        <option value="families/Meredith.html">Meredith</option>
+        <option value="families/Penny.html">Penny</option>
+        <option value="families/Silversleeves.html">Silversleeves</option>
+    </select>
+</nav>
+
+
+    <div class="container">
+        <header>
+            <h1>The Barnikel Family Line</h1>
+            <p class="subtitle">Danish Fishmongers and Traders</p>
+        </header>
+
+        <div id="cy"></div>
+    </div>
+
+    <script>
+        // Embed the family tree data
+        const familyData = {"nodes":[{"id":"Hrothgar-Barnikel-1026","name":"Hrothgar Barnikel","year":"1026","chapter":"conqueror","role":null,"portrait":"images/characters/sm/Hrothgar-Barnikel-1026.png","page":"characters/Hrothgar-Barnikel-1026.html"},{"id":"Barnikel-Fishmonger-1140","name":"Barnikel Fishmonger","year":"1140","chapter":"saint","role":null,"portrait":"images/characters/sm/Barnikel-Fishmonger-1140.png","page":"characters/Barnikel-Fishmonger-1140.html"},{"id":"Sister-Mabel-Barnikel-1148","name":"Sister Mabel Barnikel","year":"1148","chapter":"saint","role":null,"portrait":"images/characters/sm/Sister-Mabel-Barnikel-1148.png","page":"characters/Sister-Mabel-Barnikel-1148.html"},{"id":"Waldus-Barnikel-1248","name":"Waldus Barnikel","year":"1248","chapter":"whorehouse","role":null,"portrait":"images/characters/sm/Waldus-Barnikel-1248.png","page":"characters/Waldus-Barnikel-1248.html"},{"id":"Dame-Barnikel-1346","name":"Dame Barnikel","year":"1346","chapter":"whorehouse","role":null,"portrait":"images/characters/sm/Dame-Barnikel-1346.png","page":"characters/Dame-Barnikel-1346.html"},{"id":"John-Fleming-1341","name":"John Fleming","year":"1341","chapter":"whorehouse","role":null,"portrait":"images/characters/sm/John-Fleming-1341.png","page":"characters/John-Fleming-1341.html"},{"id":"James-Bull-1358","name":"James Bull","year":"1358","chapter":"whorehouse","role":null,"portrait":"images/characters/sm/James-Bull-1358.png","page":"characters/James-Bull-1358.html"},{"id":"Orlando-Black-Barnikel-1562","name":"Orlando Black Barnikel","year":"1562","chapter":"globe","role":null,"portrait":"images/characters/sm/Orlando-Black-Barnikel-1562.png","page":"characters/Orlando-Black-Barnikel-1562.html"},{"id":"Jonas-Barnikel-1812","name":"Jonas Barnikel","year":"1812","chapter":"crystal","role":null,"portrait":"images/characters/sm/Jonas-Barnikel-1812.png","page":"characters/Jonas-Barnikel-1812.html"},{"id":"Charlotte-Dogget-1818","name":"Charlotte Dogget","year":"1818","chapter":"crystal","role":null,"portrait":"images/characters/sm/Charlotte-Dogget-1818.png","page":"characters/Charlotte-Dogget-1818.html"},{"id":"William-Barnikel-1870","name":"William Barnikel","year":"1870","chapter":"blitz","role":null,"portrait":"images/characters/sm/William-Barnikel-1870.png","page":"characters/William-Barnikel-1870.html"}],"links":[{"source":"Dame-Barnikel-1346","target":"John-Fleming-1341","type":"marriage"},{"source":"Dame-Barnikel-1346","target":"James-Bull-1358","type":"marriage"},{"source":"Jonas-Barnikel-1812","target":"Charlotte-Dogget-1818","type":"marriage"},{"source":"Barnikel-Fishmonger-1140","target":"Sister-Mabel-Barnikel-1148","type":"sibling"},{"source":"Jonas-Barnikel-1812","target":"William-Barnikel-1870","type":"child"},{"source":"Charlotte-Dogget-1818","target":"William-Barnikel-1870","type":"child"},{"source":"Hrothgar-Barnikel-1026","target":"Barnikel-Fishmonger-1140","type":"descent","label":"~4 generations (114 years)","gap":null},{"source":"Hrothgar-Barnikel-1026","target":"Sister-Mabel-Barnikel-1148","type":"descent","label":"~4 generations (122 years)","gap":null},{"source":"Barnikel-Fishmonger-1140","target":"Waldus-Barnikel-1248","type":"descent","label":"~4 generations (108 years)","gap":null},{"source":"Waldus-Barnikel-1248","target":"Dame-Barnikel-1346","type":"descent","label":"~3 generations (98 years)","gap":null},{"source":"Waldus-Barnikel-1248","target":"Orlando-Black-Barnikel-1562","type":"descent","label":"~10 generations (314 years)","gap":null},{"source":"Waldus-Barnikel-1248","target":"Jonas-Barnikel-1812","type":"descent","label":"~19 generations (564 years)","gap":null}],"chapters":[{"id":"conqueror","title":"THE CONQUEROR","subtitle":"(1066)"},{"id":"saint","title":"THE SAINT","subtitle":"(1170)"},{"id":"whorehouse","title":"THE WHORE HOUSE","subtitle":"(1290s)"},{"id":"globe","title":"THE GLOBE","subtitle":"(1599)"},{"id":"crystal","title":"THE CRYSTAL PALACE","subtitle":"(1851)"},{"id":"blitz","title":"THE BLITZ","subtitle":"(1940)"}],"layout":{"couples":[{"person1":"John-Fleming-1341","person2":"Dame-Barnikel-1346","person1_side":"left","person2_side":"right","offset":200}],"singles":{"Orlando-Black-Barnikel-1562":-200}}};
+    </script>
+    <script src="js/family-tree.js"></script>
+</body>
+</html>

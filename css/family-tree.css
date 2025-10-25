@@ -1,0 +1,58 @@
+/* Family Tree Page Styles */
+
+/* Header styling for family tree pages */
+header {
+    background: linear-gradient(to bottom, #f5f5dc 0%, rgba(245, 245, 220, 0.25) 100%);
+    padding: 20px;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 5px;
+}
+
+header .subtitle {
+    font-size: 1.1em;
+    margin-bottom: 0;
+}
+
+/* Container overrides for full-width family tree */
+.container {
+    max-width: none !important;
+    width: 100% !important;
+    padding: 0 !important;
+    position: relative;
+}
+
+/* Cytoscape container */
+#cy {
+    width: 100%;
+    height: 2000px; /* Initial height, will be adjusted dynamically by JS */
+    background-color: transparent;
+}
+
+/* Chapter overlays along left side */
+.chapter-overlay {
+    position: absolute;
+    left: 0;
+    width: 42px;
+    min-height: 240px;
+    background: rgba(245, 241, 232, 0.95);
+    color: #4a4a4a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: clamp(0.75em, 1.28em, 1.28em);
+    font-weight: bold;
+    z-index: 999;
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+    padding: 15px 8px;
+    border-top: 4px solid #666;
+    box-shadow: 2px 0 4px rgba(0, 0, 0, 0.1);
+    overflow-wrap: break-word;
+    word-break: break-word;
+    hyphens: auto;
+}

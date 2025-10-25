@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="/london/">
+    <title>Adam Ducket - London Characters</title>
+    <link rel="stylesheet" href="css/london.css">
+    <link rel="stylesheet" href="css/character.css">
+</head>
+<body class="character-page" data-family="dogget">
+    
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="families/Barnikel.html">Barnikel</a></li>
+        <li><a href="families/Bull.html">Bull</a></li>
+        <li><a href="families/Carpenter.html">Carpenter</a></li>
+        <li><a href="families/Dogget.html" class="current">Dogget</a></li>
+        <li><a href="families/Ducket.html">Ducket</a></li>
+        <li><a href="families/Fleming.html">Fleming</a></li>
+        <li><a href="families/Meredith.html">Meredith</a></li>
+        <li><a href="families/Penny.html">Penny</a></li>
+        <li><a href="families/Silversleeves.html">Silversleeves</a></li>
+    </ul>
+    <select onchange="if(this.value) window.location.href=this.value">
+        <option value="">Choose a family...</option>
+        <option value="index.html">Home</option>
+        <option value="families/Barnikel.html">Barnikel</option>
+        <option value="families/Bull.html">Bull</option>
+        <option value="families/Carpenter.html">Carpenter</option>
+        <option value="families/Dogget.html" selected>Dogget</option>
+        <option value="families/Ducket.html">Ducket</option>
+        <option value="families/Fleming.html">Fleming</option>
+        <option value="families/Meredith.html">Meredith</option>
+        <option value="families/Penny.html">Penny</option>
+        <option value="families/Silversleeves.html">Silversleeves</option>
+    </select>
+</nav>
+
+
+    <div class="character-container">
+        <div class="character-header">
+            <h1>Adam Ducket</h1>
+            <div class="birth-year">c. 1187</div>
+        </div>
+
+        <img src="images/characters/Adam-1187.png" alt="Adam Ducket" class="character-portrait-large">
+
+        <div class="character-body">
+<div class="toc-container">
+  <div class="toc-header">
+    <span class="toc-title">Contents</span>
+    <button class="toc-toggle" onclick="toggleTOC()"><<</button>
+  </div>
+  <div class="toc-content">
+        <div class='toc-section'><a href='characters/Adam-1187.html#overview'>Overview</a></div>
+        <div class='toc-section'><a href='characters/Adam-1187.html#physical-description'>Physical Description</a></div>
+        <div class='toc-section'><a href='characters/Adam-1187.html#character-and-personality'>Character and Personality</a></div>
+        <div class='toc-section'><a href='characters/Adam-1187.html#life-and-events'>Life and Events</a></div>
+        <div class='toc-subsection'><a href='characters/Adam-1187.html#early-childhood-c-1187-1192'>Early Childhood (c. 1187-1192)</a></div>
+        <div class='toc-subsection'><a href='characters/Adam-1187.html#the-windsor-land-c-1188'>The Windsor Land (c. 1188)</a></div>
+        <div class='toc-subsection'><a href='characters/Adam-1187.html#rise-as-a-fishmonger-c-1210-1223'>Rise as a Fishmonger (c. 1210-1223)</a></div>
+        <div class='toc-subsection'><a href='characters/Adam-1187.html#the-accusation-november-1223'>The Accusation (November 1223)</a></div>
+        <div class='toc-subsection'><a href='characters/Adam-1187.html#the-trial-november-1223'>The Trial (November 1223)</a></div>
+        <div class='toc-subsection'><a href='characters/Adam-1187.html#aftermath-1223-1224'>Aftermath (1223-1224)</a></div>
+        <div class='toc-section'><a href='characters/Adam-1187.html#relationships'>Relationships</a></div>
+        <div class='toc-subsection'><a href='characters/Adam-1187.html#sister-mabel-barnikel'>Sister Mabel Barnikel</a></div>
+        <div class='toc-subsection'><a href='characters/Adam-1187.html#barnikel-the-fishmonger'>Barnikel the Fishmonger</a></div>
+        <div class='toc-subsection'><a href='characters/Adam-1187.html#pentecost-silversleeves'>Pentecost Silversleeves</a></div>
+        <div class='toc-section'><a href='characters/Adam-1187.html#historical-context'>Historical Context</a></div>
+        <div class='toc-section'><a href='characters/Adam-1187.html#themes-and-significance'>Themes and Significance</a></div>
+  </div>
+</div>
+<script>
+  function toggleTOC() {
+    const container = document.querySelector('.toc-container');
+    const content = document.querySelector('.toc-content');
+    const title = document.querySelector('.toc-title');
+    const toggle = document.querySelector('.toc-toggle');
+
+    if (container.classList.contains('collapsed')) {
+      container.classList.remove('collapsed');
+      content.style.display = 'block';
+      title.style.display = 'inline';
+      toggle.textContent = '<<';
+    } else {
+      container.classList.add('collapsed');
+      content.style.display = 'none';
+      title.style.display = 'none';
+      toggle.textContent = '☰';
+    }
+  }
+</script>
+
+
+<div class='basic-info-box'>
+<div class='info-row'>
+<div class='info-label'>Born</div>
+<div class='info-content'>
+c. 1187</div>
+</div>
+<div class='info-row'>
+<div class='info-label'>Occupation</div>
+<div class='info-content'>
+Fishmonger (until expelled from guild)</div>
+</div>
+<div class='info-row'>
+<div class='info-label'>Social Status</div>
+<div class='info-content'>
+Declared a serf by the Hustings court in 1224, despite living as a freeman</div>
+</div>
+<div class='info-row'>
+<div class='info-label'>Father</div>
+<div class='info-content'>
+<a href="characters/Simon-1140.html">Simon the armourer</a></div>
+</div>
+<div class='info-row'>
+<div class='info-label'>Mother</div>
+<div class='info-content'>
+Unknown</div>
+</div>
+<div class='info-row'>
+<div class='info-label'>Betrothed</div>
+<div class='info-content'>
+Lucy Barnikel (engagement broken off)</div>
+</div>
+<div class='info-row'>
+<div class='info-label'>Chapters</div>
+<div class='info-content'>
+The Mayor</div>
+</div>
+</div>
+<h2 id='overview'>Overview</h2>
+
+<p>Adam Ducket is a London fishmonger whose life is destroyed when <a href="characters/Pentecost-Silversleeves-1145.html">Pentecost Silversleeves</a> discovers a legal technicality proving Adam's servile status. Born shortly before or after his father's death, Adam was virtually adopted by <a href="characters/Sister-Mabel-Barnikel-1148.html">Sister Mabel Barnikel</a> and raised among the Barnikel family, only to lose his citizenship, craft, and betrothal when his inherited land strips at Windsor prove he is technically a serf. His downfall represents Silversleeves's long-delayed revenge against Simon the armourer.</p>
+
+<h2 id='physical-description'>Physical Description</h2>
+
+<p>Adam possessed the distinctive Barnikel family traits: webbed hands and a white tuft of hair. These hereditary characteristics led the Barnikel family to nickname him "little duck" or "ducket" when he was young, a name that stuck and replaced his original surname.</p>
+
+<h2 id='character-and-personality'>Character and Personality</h2>
+
+<p>Adam appears to have been a decent, hardworking man who had successfully established himself in London's merchant community. His bewilderment at the accusations against him – "They say I'm not who I think I am, and I can't prove it" – reveals his genuine ignorance of the legal trap awaiting him. He made earnest efforts to defend himself, riding immediately to Windsor to investigate when the accusation arose, but the evidence had been carefully arranged against him. His desperation is evident in his questions about his craft and his betrothed as the court's judgment strips away his entire life.</p>
+
+<h2 id='life-and-events'>Life and Events</h2>
+
+<h3 id='early-childhood-c-1187-1192'>Early Childhood (c. 1187-1192)</h3>
+
+<p>Adam's father, Simon the armourer, died around the time of his birth, leaving his mother widowed with an infant son. Simon's two daughters from his first marriage showed no interest in helping the widow and child. Sister Mabel Barnikel not only comforted the mother but virtually adopted the boy, bringing him to her brother <a href="characters/Barnikel-Fishmonger-1140.html">Barnikel the Fishmonger</a>'s house as a playmate for the Barnikel children.</p>
+
+<p>The Barnikel family soon dubbed the boy "little duck" or "ducket" because of his webbed hands and white hair tuft – hereditary traits he shared with them. The name Adam Ducket stuck, replacing whatever his birth name might have been.</p>
+
+<p>Mabel visited Adam and his mother almost daily, providing crucial support. The widow managed to support herself through her work as a sempstress and by letting out two rooms of the four-room house Simon had left her near Cornhill.</p>
+
+<h3 id='the-windsor-land-c-1188'>The Windsor Land (c. 1188)</h3>
+
+<p>Simon had left his widow not only the London house but also a few strips of land near Windsor, worked by his distant cousins who remained serfs. Before his death, Simon had made her promise: "Never give up our land. Keep it for Adam." With Mabel's help, the widow traveled to Windsor to make arrangements for the land's management.</p>
+
+<p>There she met her husband's kin, including the family head who had the same white patch of hair as Simon. He convinced her that she needn't visit annually, offering to handle matters locally. True to form, the widow never heard from the Windsor relations again and received no money from the land. She kept promising herself she would investigate "the following year. Or perhaps the year after that. It was a long way."</p>
+
+<p>When Adam was five, she told him about the land strips, but the matter meant nothing to the child, and in time he forgot it entirely.</p>
+
+<h3 id='rise-as-a-fishmonger-c-1210-1223'>Rise as a Fishmonger (c. 1210-1223)</h3>
+
+<p>Adam grew up to become a member of the Fishmongers' Company, achieving a modest but respectable position in London's craft guild system. He married, though his first wife died in childbirth several years before 1224. His patron Barnikel had a daughter, Lucy, and they became betrothed, planning to marry in the spring of 1224.</p>
+
+<h3 id='the-accusation-november-1223'>The Accusation (November 1223)</h3>
+
+<p>On a dull November afternoon, a messenger arrived at Adam's Cornhill house with a summons to appear before the Hustings court. He discovered to his shock that Pentecost Silversleeves had accused him of being a serf masquerading as a citizen – an unthinkable offense in proud London.</p>
+
+<p>Adam immediately rode to Windsor to investigate, but to his astonishment, his distant cousins and the estate steward confirmed the accusation. The truth was obscure but damning: over the years, his cousins had paid the rent for his inherited land strips not in cash but in labour service, treating them as servile holdings. Even though Adam had never performed the labour himself and lived in London, in feudal law this made him technically a serf.</p>
+
+<h3 id='the-trial-november-1223'>The Trial (November 1223)</h3>
+
+<p>At the Guildhall, with Barnikel and Mabel as his supporters, Adam faced the mayor and aldermen. Silversleeves produced Adam's Windsor cousins and the estate steward, who testified that Adam held his land by servile labour service, just as they did.</p>
+
+<p>Adam protested: "I was told I had cousins who were serfs, but that we were always free." One old man in the hamlet might have confirmed this, but he had died the week before – suspiciously convenient timing.</p>
+
+<p><a href="characters/Sampson-Bull-1140.html">Sampson Bull</a> tried to argue that as Simon the armourer's son, Adam must be a citizen by right. But Silversleeves's counter was devastating: "Adam Ducket holds his land by labour service <i>at this very moment</i>. He is a serf, <i>now</i>."</p>
+
+<p>The mayor had no choice: "I'm sorry, Adam Ducket. This is a bad business and you may not even be to blame. But we can't have serfs as citizens. You must leave us."</p>
+
+<h3 id='aftermath-1223-1224'>Aftermath (1223-1224)</h3>
+
+<p>Adam lost everything. He was expelled from the Fishmongers' Company and stripped of his citizenship. When he asked about Lucy, even Mabel – who had been like a second mother to him – had to tell him: "This is terrible, Adam, but we can't have Lucy marrying you any more. You're not a citizen."</p>
+
+<p>Barnikel promised to help him, but Adam's life as he had known it was over. Pentecost Silversleeves had finally achieved his revenge against Simon the armourer.</p>
+
+<h2 id='relationships'>Relationships</h2>
+
+<h3 id='sister-mabel-barnikel'>Sister Mabel Barnikel</h3>
+
+<p>Sister Mabel virtually adopted Adam after his father's death, bringing him into the Barnikel family circle. She visited him and his mother almost daily throughout his childhood and remained a supporter into his adulthood. However, even this maternal bond could not overcome London's rigid customs: when Adam was declared a serf, Mabel told him his engagement to Lucy must end, showing that citizenship trumped even deep personal affection in medieval London.</p>
+
+<h3 id='barnikel-the-fishmonger'>Barnikel the Fishmonger</h3>
+
+<p>Adam's patron who helped him establish himself in the Fishmongers' Company and whose daughter Lucy he was set to marry. Barnikel supported him at his trial and promised continued help, but could not prevent the loss of Adam's citizenship and livelihood.</p>
+
+<h3 id='pentecost-silversleeves'>Pentecost Silversleeves</h3>
+
+<p>Though Adam "scarcely knew" Silversleeves even by sight, he became the victim of Silversleeves's long-delayed revenge against his father Simon. The Exchequer clerk's investigation was thorough and ruthless, exploiting a legal technicality that Adam had no way of knowing existed.</p>
+
+<h2 id='historical-context'>Historical Context</h2>
+
+<p>Adam's case illustrates the rigid boundaries of medieval urban citizenship. In theory, serfs who lived in a town unclaimed for a year and a day became free, but the proud freemen of London jealously guarded their status. They saw themselves as "barons," not runaway serfs, and accusations of serfdom were heard in London courts for many generations.</p>
+
+<p>The case also reveals the complexity of feudal land tenure. Adam's servile status derived not from his parentage or residence, but from the technical question of how rent was paid on inherited land strips miles away from London. Such obscure legalities could destroy a man's entire life in the feudal world.</p>
+
+<p>Finally, Adam's downfall demonstrates the power of vengeance in medieval society. Silversleeves waited years for his opportunity, suggesting that feuds could span generations and that patient enemies would exploit any legal mechanism available.</p>
+
+<h2 id='themes-and-significance'>Themes and Significance</h2>
+
+<p>Adam Ducket represents the precariousness of status in medieval society. Despite being raised as a freeman, educated in a craft, and accepted into London's guild system, a forgotten inheritance and a vindictive enemy could strip away everything he had built. His story illustrates how medieval identity was determined not by one's character or accomplishments, but by legal technicalities of land tenure and feudal obligation.</p>
+
+<p>His adoption by the Barnikel family, signified by his acquisition of their nickname "Ducket" (little duck) and their hereditary physical traits, makes his ultimate rejection all the more poignant. Even deep personal bonds and virtual family relationships could not overcome the legal fact of serfdom in status-conscious medieval London.</p>
+
+<p>Adam also serves as the unwitting instrument of Silversleeves's revenge – proof that in medieval society, feuds could claim innocent victims a generation after the original offense, and that those with access to legal knowledge and royal records held devastating power over ordinary citizens.</p>
+
+        </div>
+    </div>
+</body>
+</html>

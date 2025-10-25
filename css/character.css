@@ -1,0 +1,392 @@
+/* Character Page Styles */
+
+/* Table of Contents */
+.toc-container {
+    position: fixed;
+    top: 60px;
+    left: 5px;
+    width: 220px;
+    background: rgb(250, 248, 245);
+    border: 1px solid rgba(74, 74, 74, 0.3);
+    border-radius: 8px;
+    overflow: hidden;
+    font-size: 0.8em;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    z-index: 100;
+    max-height: calc(100vh - 80px);
+    overflow-y: auto;
+    transition: width 0.2s ease;
+}
+
+.toc-container.collapsed {
+    width: 42px;
+    overflow: visible;
+    border-radius: 8px;
+    background: rgb(235, 230, 225);
+}
+
+.toc-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 2px 0px 10px;
+    background: rgb(235, 230, 225);
+    border-bottom: 1px solid rgba(74, 74, 74, 0.2);
+}
+
+.toc-container.collapsed .toc-header {
+    padding: 0;
+    justify-content: center;
+    border-bottom: none;
+    border-radius: 8px;
+}
+
+.toc-title {
+    font-weight: bold;
+    color: #4a4a4a;
+    font-size: 1.1em;
+}
+
+.toc-toggle {
+    background: none;
+    border: none;
+    color: #4a4a4a;
+    cursor: pointer;
+    font-size: 10pt;
+    padding: 4px 8px;
+    font-family: inherit;
+    line-height: 1;
+    font-weight: normal;
+}
+
+.toc-container.collapsed .toc-toggle {
+    font-size: 1.3em;
+    padding: 8px;
+}
+
+.toc-toggle:hover {
+    color: #1a6ba8;
+}
+
+.toc-content {
+    padding: 0px 5px;
+}
+
+.toc-section {
+    margin: 8px 0;
+}
+
+.toc-subsection {
+    margin: 6px 0 6px 20px;
+    font-size: 0.95em;
+}
+
+.toc-section a,
+.toc-subsection a {
+    color: #1a6ba8;
+    text-decoration: none;
+    display: block;
+    line-height: 1.5;
+    padding: 4px 6px;
+    margin: -4px -6px;
+    border-radius: 3px;
+    transition: all 0.15s ease;
+}
+
+.toc-section a:hover,
+.toc-subsection a:hover {
+    color: #333;
+    background: rgba(74, 74, 74, 0.08);
+}
+
+
+.character-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px;
+    padding-top: 20px;
+}
+
+.character-header {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.character-header h1 {
+    color: #4a4a4a;
+    font-size: 3.5em;
+    margin-bottom: 5px;
+}
+
+.birth-year {
+    color: #4a4a4a;
+    font-size: 1.75em;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.character-portrait-large {
+    display: block;
+    margin: 10px auto 30px;
+    width: 100%;
+    border-radius: 8px;
+    border: 4px solid #666;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.character-body {
+    line-height: 1.9;
+    font-size: 1.3em;
+}
+
+/* Section styling - each h2 starts a new section */
+.character-body h2 {
+    color: #4a4a4a;
+    margin-top: 35px;
+    margin-bottom: 0;
+    padding: 15px 20px 12px 20px;
+    font-size: 1.4em;
+    scroll-margin-top: 80px;
+}
+
+.character-body h2:first-child {
+    margin-top: 0;
+}
+
+.character-body h3 {
+    color: #555;
+    margin: 0;
+    padding: 15px 20px 8px 20px;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(8px);
+    font-size: 1.2em;
+    scroll-margin-top: 80px;
+}
+
+.character-body p {
+    margin: 0;
+    text-align: justify;
+    padding: 15px 20px;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(8px);
+}
+
+.character-body ul, .character-body ol {
+    margin: 0;
+    padding: 15px 20px 15px 50px;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(8px);
+}
+
+.character-body li {
+    margin-bottom: 10px;
+}
+
+/* Apply bottom radius to last element before next h2 or end of content */
+.character-body h3:has(+ h2),
+.character-body p:has(+ h2),
+.character-body ul:has(+ h2),
+.character-body ol:has(+ h2),
+.character-body h3:last-child,
+.character-body p:last-child,
+.character-body ul:last-child,
+.character-body ol:last-child,
+.character-body blockquote:last-child {
+    border-radius: 8px;
+    margin-bottom: 0;
+}
+
+.character-body a {
+    color: #4a4a4a;
+    text-decoration: none;
+    border-bottom: 1px dotted #666;
+    transition: all 0.2s;
+}
+
+.character-body a:hover {
+    color: #333;
+    border-bottom: 1px solid #333;
+}
+
+.back-link {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: #4a4a4a;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.2s;
+}
+
+.back-link:hover {
+    color: #333;
+}
+
+.back-link::before {
+    content: "← ";
+}
+
+/* Basic Information Infobox (Wikipedia-style) */
+.basic-info-box {
+    float: right;
+    width: 390px;
+    margin: 95px 10px 20px 25px;
+    background: rgb(250, 248, 245);
+    border: 2px solid rgba(74, 74, 74, 0.3);
+    border-radius: 8px;
+    overflow: hidden;
+    font-size: 0.85em;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    position: relative;
+    z-index: 10;
+    isolation: isolate;
+    will-change: transform;
+    transform: translateZ(0);
+}
+
+.info-row {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    border-bottom: 1px solid rgba(74, 74, 74, 0.15);
+    min-height: 35px;
+}
+
+.info-row:last-child {
+    border-bottom: none;
+}
+
+.info-label {
+    font-weight: bold;
+    color: #4a4a4a;
+    padding: 10px 12px;
+    background: rgb(235, 230, 225);
+    display: flex;
+    align-items: center;
+}
+
+.info-content {
+    padding: 10px 12px;
+    color: #333;
+    line-height: 1.5;
+}
+
+.info-content a {
+    color: #4a4a4a;
+    text-decoration: none;
+    border-bottom: 1px dotted #666;
+}
+
+.info-content a:hover {
+    color: #333;
+    border-bottom: 1px solid #333;
+}
+
+/* Quote Styling */
+.character-quote {
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(8px);
+    border-left: 4px solid #4a4a4a;
+    margin: 0 0 30px 0;
+    padding: 25px 30px 20px 30px;
+    font-style: italic;
+    position: relative;
+}
+
+.character-quote::before {
+    content: '\201C';
+    font-size: 4em;
+    color: rgba(74, 74, 74, 0.2);
+    position: absolute;
+    left: 15px;
+    top: 5px;
+    font-family: Georgia, serif;
+    line-height: 1;
+}
+
+.quote-text {
+    font-size: 1.05em;
+    color: #333;
+    line-height: 1.7;
+    padding-left: 45px;
+}
+
+.quote-attribution {
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 12px;
+    padding-left: 45px;
+    font-style: normal;
+}
+
+.quote-attribution::before {
+    content: '— ';
+}
+
+/* Hide TOC on screens narrower than 1200px */
+@media (max-width: 1278px) {
+    .toc-container {
+        display: none;
+    }
+}
+
+/* Responsive Layout for Smaller Screens */
+@media (max-width: 768px) {
+    .character-container {
+        padding: 20px 15px;
+    }
+
+    .character-header h1 {
+        font-size: 2.5em;
+    }
+
+    .birth-year {
+        font-size: 1.4em;
+    }
+
+    .character-body {
+        font-size: 1.1em;
+    }
+
+    .basic-info-box {
+        float: none;
+        width: auto;
+        margin: 0 0 25px 0;
+    }
+
+    .character-body h2 {
+        font-size: 1.2em;
+        padding: 12px 15px 10px 15px;
+    }
+
+    .character-body h3 {
+        font-size: 1.1em;
+        padding: 12px 15px 8px 15px;
+    }
+
+    .character-body p {
+        padding: 12px 15px;
+    }
+
+    .character-body ul, .character-body ol {
+        padding: 12px 15px 12px 40px;
+    }
+
+    .character-quote {
+        padding: 20px 20px 15px 20px;
+        margin: 0 0 25px 0;
+    }
+
+    .character-quote::before {
+        font-size: 3em;
+        left: 10px;
+        top: 5px;
+    }
+
+    .quote-text {
+        font-size: 1em;
+        padding-left: 35px;
+    }
+
+    .quote-attribution {
+        padding-left: 35px;
+    }
+}
